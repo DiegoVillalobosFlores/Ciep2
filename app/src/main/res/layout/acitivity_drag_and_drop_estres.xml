@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.macmini3cuceimobile.ciep.DragAndDrop">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manifestaciones cognitivas, fisiologicas y conductuales"
+                    android:layout_margin="20dp"
+                    android:textSize="19sp"
+                    android:gravity="center"
+                    android:id="@+id/texto1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2.- Cuestionario de Evaluación."
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@id/texto1"
+                    android:id="@+id/texto2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nA continuacion se encuentra un cuestionario que fue tomado de un progra,a auto aplicado para el control de la ansiedad ante los exámenes de la Universidad de Almería, que fue adaptado con el que podrás detectar qué tipo de manifestaciones son las que presentas en periodes de estrés como el de los exámenes"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/texto3"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/texto2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nDeberás responder los siguientes items siguiendo la siguiente escala:\n\nIngresa del 1 al 5 que tan estresado te sientes  conforme a las siguientes situaciones. Tomando en cuenta que el:
+                \n1 = nunca
+2 = casi nunca
+3 = regularmente
+4 = casi siempre
+5 = siempre\n"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/texto4"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/texto3" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/layout1"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/a1"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/uno"/>
+                    <TextView
+                        android:layout_width="242dp"
+                        android:layout_height="match_parent"
+                        android:text="No me puedo concentrar, me preocupa que me pueda ir mal"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/uno"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="0.75" />
+
+                    <EditText
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text1"
+                        android:numeric="integer" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout2"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/dos"
+                        android:src="@drawable/a2"
+                        android:layout_marginLeft="5dp"/>
+                    <TextView
+                        android:layout_width="242dp"
+                        android:layout_height="match_parent"
+                        android:text="Me late muy rápido el corazón, me falta aire y la respiración es agitada"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="top"
+                        android:layout_weight="0.75" />
+                    <EditText
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text2"
+                        android:numeric="integer"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout3"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/a3"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/tres" />
+
+                    <TextView
+                        android:layout_width="242dp"
+                        android:layout_height="match_parent"
+                        android:text="Estoy demasiado irritable en periodos de exámenes"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/textView88"
+                        android:layout_weight="0.75" />
+
+                    <EditText
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text3"
+                        android:numeric="integer"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout4"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/a4"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:layout_width="242dp"
+                        android:layout_height="match_parent"
+                        android:text="Me siento tonto, tengo pensamientos como “los demás saben más que yo”"
+                        android:id="@+id/textView89"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight=".75" />
+
+                    <EditText
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text4"
+                        android:numeric="integer"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout5"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/a5"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:layout_width="242dp"
+                        android:layout_height="wrap_content"
+                        android:text="Siento molestias en el estómago"
+                        android:id="@+id/textView90"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.75" />
+
+                    <EditText
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text5"
+                        android:numeric="integer"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout6"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView5"
+                        android:src="@drawable/a6"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:layout_width="242dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fumo, como o bebo demasiado"
+                        android:id="@+id/textView91"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.75" />
+
+                    <EditText
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text6"
+                        android:numeric="integer"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout7"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/a7"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/imageView6" />
+
+                    <TextView
+                        android:layout_width="242dp"
+                        android:layout_height="wrap_content"
+                        android:text="Siento que no puedo, tengo pensamientos como  “no lo haré bien” o “voy a reprobar”"
+                        android:id="@+id/textView92"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.75" />
+
+                    <EditText
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text7"
+                        android:numeric="integer"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout8"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/a8"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/imageView7" />
+
+                    <TextView
+                        android:layout_width="242dp"
+                        android:layout_height="wrap_content"
+                        android:text="Me tiemblan las manos o las piernas"
+                        android:id="@+id/textView93"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.75" />
+
+                    <EditText
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text8"
+                        android:numeric="integer"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout9"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/a9"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/imageView8" />
+
+                    <TextView
+                        android:layout_width="242dp"
+                        android:layout_height="wrap_content"
+                        android:text="Le doy prioridad a otras actividades, aunque sé que tengo que estudiar"
+                        android:id="@+id/textView94"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.75" />
+
+                    <EditText
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text9"
+                        android:numeric="integer"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout10"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/a10"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/imageView9" />
+
+                    <TextView
+                        android:layout_width="242dp"
+                        android:layout_height="wrap_content"
+                        android:text="Me aíslo de los demás "
+                        android:id="@+id/textView95"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.75" />
+
+                    <EditText
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text10"
+                        android:numeric="integer"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout11"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/a11"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/imageView10" />
+
+                    <TextView
+                        android:layout_width="242dp"
+                        android:layout_height="wrap_content"
+                        android:text="Me duele constantemente la cabeza"
+                        android:id="@+id/textView96"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.75" />
+
+                    <EditText
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text11"
+                        android:numeric="integer"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout12"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/a12"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/imageView11" />
+
+                    <TextView
+                        android:layout_width="242dp"
+                        android:layout_height="wrap_content"
+                        android:text="Me aterra lo que vayan a pensar mis papás"
+                        android:id="@+id/textView97"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.75" />
+
+                    <EditText
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text12"
+                        android:numeric="integer"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"></LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Calcular"
+                        android:id="@+id/calcular"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"></LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

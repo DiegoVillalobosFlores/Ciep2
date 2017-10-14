@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="9.5"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:text="Examinar estrategias de afrontamiento para el manejo de ansiedad y estrés ante los exámenes.\n"
+                    android:layout_marginTop="20dp"
+                    android:textSize="19dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:text="1. Actitud y la importancia de ser optimistas:\n"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:text="La importancia del optimismo ha sido demostrada, por ejemplo, a partir de pruebas efectuadas por el psicólogo C.R. Snyder de la Universidad de Kansas, entre alumnos universitarios de Estados Unidos. En ese estudio se concluyó que el rendimiento académico universitario de un alumno depende más de la actitud de éste que de su Coeficiente Intelectual (C.I.). Así, vieron que unos buenos resultados académicos eran obtenidos más por alumnos con una actitud positiva y optimista (evaluados a través de test especiales) que por alumnos con una buena nota en el S.A.T., un test con una elevada correlación con el Coeficiente Intelectual. El S.A.T. (Scholastic Aptitude Test) es el examen de aptitud escolar que realizan los estudiantes estadounidenses que acceden a la Universidad. (Galindo, J.) Goleman (1995) añade que el optimismo y la esperanza impiden caer en la apatía, la desesperación o la depresión frente a las adversidades.\n"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:text="Algunos saben, por experiencias pasadas, que les va bien en los exámenes y esperan con ansias la idea de ser puestos a prueba. Algunos les temen porque saben que se han esforzado lo suficiente. La mayor parte del miedo a los exámenes, sin embargo, es irracional y no ayuda al proceso de aprobación. A veces se expresa como un miedo extremo o fobia en frases como 'si no apruebo este examen, mi vida no valdrá la pena'. Si tienes pensamientos como este pasando por tu mente, y también te ves afectado por sensaciones físicas, como sudoración, dificultades respiratorias, ataques de pánico, pérdidas de memoria, consulta a su médico inmediatamente."/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ilustracion1_pantalla9_estres"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="9.5"></LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="18">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:id="@+id/anterior_pantalla9_estres"
+            android:onClick="onClickBack">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/boton_anterior_estres"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            ></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:id="@+id/siguiente_pantalla9_estres"
+            android:onClick="onClick">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/boton_siguiente_estres"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

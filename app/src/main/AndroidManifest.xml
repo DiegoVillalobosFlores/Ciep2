@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobiles.cucei.ciep">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FrancesActivity" />
+        <activity android:name=".AdministracionDelTiempoActivity" />
+        <activity android:name=".EstresActivity" />
+        <activity android:name=".MapasMentalesActivity" />
+        <activity android:name=".InglesActivity" />
+        <activity android:name=".DatosNumericosActivity" />
+        <activity android:name=".MatematicasActivity"/>
+        <activity android:name=".HabilidadesLecturaActivity"/>
+        <activity android:name=".ForosActivity"/>
+        <activity android:name=".ExcelActivity"/>
+    </application>
+
+</manifest>

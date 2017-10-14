@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="20"
+        android:background="#ffffffff">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView3"
+            android:layout_weight="2" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="20">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="9.5" />
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imagen1_pantalla14_excelavanzado"
+                        android:layout_gravity="center_horizontal" />
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3.5"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\nFuncion concatenar"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\nLa función CONCATENAR te permite unir hasta 255 cadenas de texto en una sola. Los elementos que se unirán pueden ser texto, números, referencias de celda o una combinación de estos elementos. Por ejemplo, si la hoja de cálculo contiene el nombre de una persona en la celda A1 y el apellido en la celda B1, ambos valores se pueden combinar en otra celda mediante la fórmula siguiente: \n\n=CONCATENAR(A1,&quot; &quot;,B1) El segundo argumento del ejemplo (&quot; &quot;) es un carácter de espacio. Todos los caracteres de espacio o puntuación que desee que aparezcan en el argumento, debe especificarlos como un argumento entre comillas.\nSintaxis \nCONCATENAR(text1; [text2]; ...) La sintaxis de la función CONCATENAR tiene los siguientes argumentos: \n\n•	Texto1:     Obligatorio. El primer elemento de texto que se concatenará.\n\n•	Texto2:    Opcional. Elementos de texto adicionales, hasta un máximo de 255 elementos. Deben estar separados con punto y coma. \n\n"
+                            android:id="@+id/textView98" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imagen2_pantalla14_excelavanzado"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="9.5" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="18"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/boton_regresar_a_pantalla11"
+                android:onClick="onClick"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

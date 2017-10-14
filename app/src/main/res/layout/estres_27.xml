@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="9.5"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tema:\nEl Estrés Académico\n"
+                    android:layout_marginTop="20dp"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bibliografía:\n"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ARBOLEDA, L.H, \nRevista Salud Número 8, Enero-Diciembre 2003, Retomado de "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="http://promocionsalud.ucaldas.edu.co/downloads/Revista%208_8.pdf\n"
+                    android:autoLink="web"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BERENSTEIN, M. , 5 técnicas simples para la gestión del tiempo para trabajadores freelance ,28 de octubre del 2012, Recuperado el  de 14 de octubre del 2013 de "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="http://www.emprendedoresnews.com/tips/5-tecnicas-simples-para-la-gestion-del-tiempo-para-trabajadores-freelance.html\n"
+                    android:autoLink="web"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FERNÁNDEZ, O., Las diez herramientas prácticas para la gestión del tiempo, 5 de mayo del 2011, Recuperado de"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="http://www.legaltoday.com/blogs/gestion-del-despacho/blog-manual-interno-de-gestion/las-diez-herramientas-practicas-para-la-gestion-del-tiempo\n"
+                    android:autoLink="web"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GALINDO, J. Actitud positiva ante la vida y su influencia en el éxito y la felicidad. Recuperado el 6 de octubre del 2013 de"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="www.lcc.uma.es/~ppgg/html/exito.html\n"
+                    android:autoLink="web"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GILGOFF, D. , ¿La meditación puede cambiar tu cerebro? Neurocientíficos así lo creen, Octubre del 2010, Retomado de "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="http://mexico.cnn.com/salud/2010/10/31/como-cambia-el-cerebro-con-la-meditacion\n"
+                    android:autoLink="web"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HERNÁNDEZ, J.M., Programa autoaplicado para el control de la ansiedad ante los exámenes: Cuestionario de Autoevaluación, Universidad de Almería, España, Retomado de:  "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="http://www.webgou.uma.es/cuestionario_1_.pdf\n"
+                    android:autoLink="web"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUÁREZ, M.L., Colección fascículos digitales Competencias en TIC, Fascículo 7: Técnicas de Estudio, Recuperado de "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="http://competenciastic.educ.ar/pdf/tecnicas_de_ estudio_5.pdf\n"
+                    android:autoLink="web"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recuperado el 6 de octubre del 2013 de"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="http://www.elestres.net/examenes.html\n"
+                    android:autoLink="web"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imagen1_pantalla27_estres"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="9.5"></LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="18">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:id="@+id/anterior_pantalla27_estres"
+            android:onClick="onClickBack">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/boton_anterior_estres"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            ></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:id="@+id/siguiente_pantalla27_estres"
+            android:onClick="onFinish">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/boton_siguiente_estres"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
