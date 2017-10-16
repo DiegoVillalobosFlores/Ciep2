@@ -50,7 +50,6 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="• Mindomo\n"
-                            android:id="@+id/textView39"
                             android:gravity="center" />
 
 
@@ -67,7 +66,8 @@
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
                             android:id="@+id/mindomo"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:src="@drawable/mindomo"/>
                     </LinearLayout>
 
 
@@ -92,7 +92,6 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="• SpiderScribe\n"
-                            android:id="@+id/textView39"
                             android:gravity="top|center"/>
 
 
@@ -108,7 +107,8 @@
                         <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
-                            android:id="@+id/spider_scribe" />
+                            android:id="@+id/spider_scribe"
+                            android:src="@drawable/spider_scribe"/>
                     </LinearLayout>
 
 
@@ -132,7 +132,6 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="• Mindmieister\n"
-                            android:id="@+id/textView39"
                             android:gravity="center"/>
 
 
@@ -148,7 +147,8 @@
                         <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
-                            android:id="@+id/mindmeister" />
+                            android:id="@+id/mindmeister"
+                            android:src="@drawable/mindmeister"/>
                     </LinearLayout>
 
 
@@ -172,7 +172,6 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="• bubbls.us\n"
-                            android:id="@+id/textView39"
                             android:gravity="center"/>
 
 
@@ -188,7 +187,8 @@
                         <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
-                            android:id="@+id/bubbl_us" />
+                            android:id="@+id/bubbl_us"
+                            android:src="@drawable/bubbl"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -211,7 +211,6 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="• MindMapr\n"
-                            android:id="@+id/textView39"
                             android:gravity="center"/>
 
 
@@ -227,7 +226,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/mindmapr" />
+                            android:id="@+id/mindmapr"
+                            android:src="@drawable/mindmapr"/>
                     </LinearLayout>
 
 
@@ -251,7 +251,6 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="• XMind\n"
-                            android:id="@+id/textView39"
                             android:gravity="center"/>
 
 
@@ -267,7 +266,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/xmind6" />
+                            android:id="@+id/xmind6"
+                            android:src="@drawable/xmind6"/>
                     </LinearLayout>
 
 
@@ -291,7 +291,6 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="• Mind42\n"
-                            android:id="@+id/textView39"
                             android:gravity="center"/>
 
 
@@ -307,7 +306,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/mind42" />
+                            android:id="@+id/mind42"
+                            android:src="@drawable/mind42"/>
                     </LinearLayout>
 
 
@@ -331,7 +331,6 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="• Wise Mapping\n"
-                            android:id="@+id/textView39"
                             android:gravity="center"/>
 
 
@@ -347,7 +346,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/wisemapping" />
+                            android:id="@+id/wisemapping"
+                            android:src="@drawable/wise_mapping"/>
                     </LinearLayout>
 
 
@@ -371,7 +371,6 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="• MindNode\n"
-                            android:id="@+id/textView39"
                             android:gravity="center"/>
 
 
@@ -387,7 +386,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/mindnode" />
+                            android:id="@+id/mindnode"
+                            android:src="@drawable/mindnode"/>
                     </LinearLayout>
 
 
@@ -411,7 +411,6 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="• SimpleMind\n"
-                            android:id="@+id/textView39"
                             android:gravity="center"/>
 
 
@@ -427,7 +426,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/simplemind" />
+                            android:id="@+id/simplemind"
+                            android:src="@drawable/simplemind"/>
                     </LinearLayout>
 
 
@@ -451,7 +451,6 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="\n• MyThoughts for Mac\n"
-                            android:id="@+id/textView39"
                             android:gravity="center"/>
 
 
@@ -467,7 +466,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/myThoughts_for_mac" />
+                            android:id="@+id/myThoughts_for_mac"
+                            android:src="@drawable/my_thoughts_for_mac"/>
                     </LinearLayout>
 
 
@@ -491,7 +491,6 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="• FreeMind\n"
-                            android:id="@+id/textView39"
                             android:gravity="center"/>
 
 
@@ -507,7 +506,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/freemind" />
+                            android:id="@+id/freemind"
+                            android:src="@drawable/freemind"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -543,12 +543,13 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="3"
                     android:id="@+id/anterior_pantalla18_mapasmentales"
-                    android:onClick="onClick">
+                    android:onClick="onClickBack">
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:id="@+id/anterior_mapasmentales" />
+                        android:id="@+id/anterior_mapasmentales"
+                        android:src="@drawable/boton_anterior_mapasmentales"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -569,7 +570,8 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:id="@+id/siguiente_mapasmentales"
-                        android:longClickable="false" />
+                        android:longClickable="false"
+                        android:src="@drawable/boton_siguiente_mapasmentales"/>
                 </LinearLayout>
             </LinearLayout>
 

@@ -51,7 +51,7 @@ class FrancesActivity : AppCompatActivity() {
             bocina2_pantalla20 -> playMultipleAudios(R.raw.a18,R.raw.a15)
             bocina3_pantalla20 -> playMultipleAudios(R.raw.a19,R.raw.a15)
 
-            else ->{
+            else -> {
                 setContentView(viewsFrances[currentView +1])
                 currentView++
             }

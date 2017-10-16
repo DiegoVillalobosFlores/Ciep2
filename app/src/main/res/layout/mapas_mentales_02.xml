@@ -25,7 +25,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imagen1_pantalla2_mapasmentales" />
+                    android:id="@+id/imagen1_pantalla2_mapasmentales"
+                    android:src="@drawable/ilustracion1_pantalla2_mapasmentales"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -267,7 +268,8 @@
                                 <ImageView
                                     android:layout_width="fill_parent"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/imagen2_pantalla2_mapasmentales" />
+                                    android:id="@+id/imagen2_pantalla2_mapasmentales"
+                                    android:src="@drawable/ilustracion2_pantalla2_mapasmentales"/>
                             </LinearLayout>
 
                             <LinearLayout
@@ -315,12 +317,13 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="3"
                     android:id="@+id/anterior_pantalla2_mapasmentales"
-                    android:onClick="onClick">
+                    android:onClick="onClickBack">
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:id="@+id/anterior_mapasmentales" />
+                        android:id="@+id/anterior_mapasmentales"
+                        android:src="@drawable/boton_anterior_mapasmentales"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -341,7 +344,8 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:id="@+id/boton_siguiente_mapasmentales"
-                        android:longClickable="false" />
+                        android:longClickable="false"
+                        android:src="@drawable/boton_siguiente_mapasmentales"/>
                 </LinearLayout>
             </LinearLayout>
 

@@ -72,7 +72,8 @@
                             <ImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="300dp"
-                                android:id="@+id/imagen1_pantalla17_mapasmentales" />
+                                android:id="@+id/imagen1_pantalla17_mapasmentales"
+                                android:src="@drawable/ilustracion1_pantalla17_mapasmentales"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -114,12 +115,13 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="3"
                     android:id="@+id/anterior_pantalla17_mapasmentales"
-                    android:onClick="onClick">
+                    android:onClick="onClickBack">
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:id="@+id/anterior_mapasmentales" />
+                        android:id="@+id/anterior_mapasmentales"
+                        android:src="@drawable/boton_anterior_mapasmentales"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -140,7 +142,8 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:id="@+id/siguiente_mapasmentales"
-                        android:longClickable="false" />
+                        android:longClickable="false"
+                        android:src="@drawable/boton_siguiente_mapasmentales"/>
                 </LinearLayout>
             </LinearLayout>
 

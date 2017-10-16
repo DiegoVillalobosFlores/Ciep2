@@ -57,60 +57,55 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="\nPara conseguir el mejor rendimiento posible de tus oportunidades para tomar notas, es importante que organices tus puntos de vista para tener un mapa mental claramente estructurado a medida que progreses tomando notas.\n"
-                            android:id="@+id/textView39" />
+                            android:text="\nPara conseguir el mejor rendimiento posible de tus oportunidades para tomar notas, es importante que organices tus puntos de vista para tener un mapa mental claramente estructurado a medida que progreses tomando notas.\n" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="\n1.- Ojea muy rápidamente el libro o artículo, para tener una noción general de cómo está organizado.
-\n"
-                            android:id="@+id/textView39" />
+                            android:text="\n1.- Ojea muy rápidamente el libro o artículo, para tener una noción general de cómo está organizado.\n" />
 
                         <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/imagen1_pantalla9_mapasmentales" />
+                            android:id="@+id/imagen1_pantalla9_mapasmentales"
+                            android:src="@drawable/ilustracion1_pantalla9_mapasmentales"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="\n2 Calcula cuánto tiempo has de dedicar a su estudio y cuánto material has de cubrir en ese tiempo.
-\n"
-                            android:id="@+id/textView39" />
+                            android:text="\n2 Calcula cuánto tiempo has de dedicar a su estudio y cuánto material has de cubrir en ese tiempo.\n" />
 
                         <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/imagen2_pantalla9_mapasmentales" />
+                            android:id="@+id/imagen2_pantalla9_mapasmentales"
+                            android:src="@drawable/ilustracion2_pantalla9_mapasmentales"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="\n3 Cartografía lo que ya sabes del tema a fin de crear “ganchos” que te permitan establecer conexiones asociativas.
-\n"
-                            android:id="@+id/textView39" />
+                            android:text="\n3 Cartografía lo que ya sabes del tema a fin de crear “ganchos” que te permitan establecer conexiones asociativas.\n" />
 
                         <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/imagen3_pantalla9_mapasmentales" />
+                            android:id="@+id/imagen3_pantalla9_mapasmentales"
+                            android:src="@drawable/ilustracion3_pantalla9_mapasmentales"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="\n4 Define metas y objetivos para esta sesión de estudio, y completa un mapa mental diferente para cada una de las cuestiones a las que necesites dar respuesta.
-\n"
-                            android:id="@+id/textView39" />
+                            android:text="\n4 Define metas y objetivos para esta sesión de estudio, y completa un mapa mental diferente para cada una de las cuestiones a las que necesites dar respuesta.\n" />
 
                         <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/imagen4_pantalla9_mapasmentales" />
+                            android:id="@+id/imagen4_pantalla9_mapasmentales"
+                            android:src="@drawable/ilustracion4_pantalla9_mapasmentales"/>
 
 
                     </LinearLayout>
@@ -153,12 +148,13 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="3"
                     android:id="@+id/anterior_pantalla9_mapasmentales"
-                    android:onClick="onClick">
+                    android:onClick="onClickBack">
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:id="@+id/boton_anterior_pantalla9_mapasmentales" />
+                        android:id="@+id/boton_anterior_pantalla9_mapasmentales"
+                        android:src="@drawable/boton_anterior_mapasmentales"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -179,7 +175,8 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:id="@+id/boton_siguiente_pantalla9_mapasmentales"
-                        android:longClickable="false" />
+                        android:longClickable="false"
+                        android:src="@drawable/boton_siguiente_mapasmentales"/>
                 </LinearLayout>
             </LinearLayout>
 
