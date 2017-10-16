@@ -93,7 +93,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="fill_parent"
                             android:layout_weight="4"
-                            android:id="@+id/bocina1_pantalla20">
+                            android:id="@+id/bocina1_pantalla20"
+                            android:onClick="onClick">
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
@@ -142,7 +143,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="fill_parent"
                             android:layout_weight="4"
-                            android:id="@+id/bocina2_pantalla20">
+                            android:id="@+id/bocina2_pantalla20"
+                            android:onClick="onClick">
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
@@ -193,7 +195,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="fill_parent"
                             android:layout_weight="4"
-                            android:id="@+id/bocina3_pantalla20">
+                            android:id="@+id/bocina3_pantalla20"
+                            android:onClick="onClick">
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"

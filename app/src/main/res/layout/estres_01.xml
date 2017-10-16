@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white" >
@@ -7,22 +7,34 @@
     <ImageView
         android:id="@+id/imagen1_pantalla1_estres"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="236dp"
+        android:layout_gravity="top"
         android:src="@drawable/portada_estres">
     </ImageView>
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="269dp"
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center"
         android:src="@drawable/ilustracion1_pantalla1_estres" />
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/comenzar_estres"
-        android:id="@+id/comenzar_estres"
-        android:onClick="onClick"/>
+        android:layout_gravity="bottom"
+        android:background="#4BB696">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/comenzar_estres"
+            android:id="@+id/comenzar_estres"
+            android:onClick="onClick"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_gravity="bottom"
+            android:background="#08488A"/>
+    </FrameLayout>
 
-</LinearLayout>
+</FrameLayout>

@@ -8,6 +8,8 @@ import kotlinx.android.synthetic.main.frances_10.*
 import kotlinx.android.synthetic.main.frances_12.*
 import kotlinx.android.synthetic.main.frances_15.*
 import kotlinx.android.synthetic.main.frances_16.*
+import kotlinx.android.synthetic.main.frances_18.*
+import kotlinx.android.synthetic.main.frances_20.*
 import mobiles.cucei.ciep.R.layout.frances_01
 
 class FrancesActivity : AppCompatActivity() {
@@ -33,15 +35,21 @@ class FrancesActivity : AppCompatActivity() {
             bocina2_pantalla12 -> playAudio(R.raw.a6)
             bocina3_pantalla12 -> playAudio(R.raw.a7)
             bocina4_pantalla12 -> playAudio(R.raw.a8)
-            champagne -> playAudio(R.raw.a2)
+            champagne -> playAudio(R.raw.a4)
             bocina1_pantalla15 -> playAudio(R.raw.a9)
             bocina2_pantalla15 -> playAudio(R.raw.a10)
             bocina1_pantalla16 -> playAudio(R.raw.a11)
             bocina2_pantalla16 -> playAudio(R.raw.a12)
             bocina3_pantalla16 -> playAudio(R.raw.a13)
             bocina4_pantalla16 -> playAudio(R.raw.a14)
-            bocina5_pantalla16 -> playAudio(R.raw.a15)
-            bocina6_pantalla16 -> playAudio(R.raw.a16)
+            bocina5_pantalla16 -> playAudio(R.raw.a12)
+            bocina6_pantalla16 -> playAudio(R.raw.a15)
+            bocina1_pantalla18 -> playAudio(R.raw.a17)
+            bocina2_pantalla18 -> playMultipleAudios(R.raw.a18,R.raw.a13)
+            bocina3_pantalla18 -> playMultipleAudios(R.raw.a19,R.raw.a13)
+            bocina1_pantalla20 -> playAudio(R.raw.a17)
+            bocina2_pantalla20 -> playMultipleAudios(R.raw.a18,R.raw.a15)
+            bocina3_pantalla20 -> playMultipleAudios(R.raw.a19,R.raw.a15)
 
             else ->{
                 setContentView(viewsFrances[currentView +1])
@@ -62,5 +70,13 @@ class FrancesActivity : AppCompatActivity() {
     fun playAudio(audio:Int){
         val mediaPlayer = MediaPlayer.create(this,audio)
         mediaPlayer.start()
+    }
+
+    fun playMultipleAudios(firstAudio:Int,secondAudio:Int){
+        var mediaPlayer = MediaPlayer.create(this,firstAudio)
+        mediaPlayer.start()
+        mediaPlayer.setOnCompletionListener { mediaPlayer = MediaPlayer.create(this,secondAudio)
+            mediaPlayer.start()
+        }
     }
 }
