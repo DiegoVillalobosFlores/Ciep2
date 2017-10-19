@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_porcentajes"
+        android:enabled="true"
+        android:icon="@drawable/ic_noun_440078_cc"
+        android:title="Porcentajes"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_graficas"
+        android:enabled="true"
+        android:icon="@drawable/ic_data_usage_black_24dp"
+        android:title="Gráficas"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_porcentajes"
+        android:enabled="true"
+        android:icon="@drawable/ic_assessment_black_24dp"
+        android:title="Histogramas"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_autoevaluacion"
+        android:enabled="true"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="Autoevaluación"
+        app:showAsAction="ifRoom"/>
+</menu>

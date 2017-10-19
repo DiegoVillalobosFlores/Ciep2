@@ -21,6 +21,11 @@
                 android:layout_height="match_parent"
                 android:weightSum="20"
                 android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/imagen1_pantalla2_mapasmentales"
+                    android:src="@drawable/ilustracion1_pantalla2_mapasmentales"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -30,8 +35,9 @@
                     android:textStyle="bold"
                     android:textIsSelectable="true"
                     android:id="@+id/textView2"
-                    android:gravity="center"
-                    android:paddingTop="15dp" />
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -56,15 +62,14 @@
                         <TextView
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:text="El objetivo en esta seccion que tú puedas formar nuevos hábitos para gestionar eficazmente la administracion de tu tiempo,esto a través del autodiagnóstico y algunas estategias de planificasión.\n\n"
+                            android:text="El objetivo en esta sección es que tú puedas formar nuevos hábitos para gestionar eficazmente la administracion de tu tiempo,esto a través del autodiagnóstico y algunas estategias de planificasión.\n\n"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:textStyle="normal"
                             android:textIsSelectable="true"
                             android:id="@+id/textView4"
                             android:textColorLink="#3354b4"
                             android:linksClickable="false"
-                            android:password="false"
-                            android:textSize="16dp" />
+                            android:textSize="16sp" />
                     </LinearLayout>
 
                     <LinearLayout

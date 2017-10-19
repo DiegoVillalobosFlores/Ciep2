@@ -1,57 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:weightSum="20"
+    android:layout_height="match_parent"
     android:background="#ffffffff">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:src="@drawable/portada_importanciadelingles"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:id="@+id/imagen2_pantalla1_importanciadelingles"
+        android:src="@drawable/ilustracion1_pantalla1_importanciadelingles"/>
+
+    <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="2.2"
-        android:weightSum="10" >
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:id="@+id/imagen1_pantalla1_importanciadelingles"
+        android:src="@drawable/bienvenida_importanciadelingles"/>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="5"
-            android:id="@+id/fondo1_pantalla1_importanciadelingles" />
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="5"
-            android:weightSum="5">
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:id="@+id/imagen2_pantalla1_importanciadelingles"
-                android:layout_weight="4" />
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:id="@+id/imagen1_pantalla1_importanciadelingles" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
+    <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="17.8">
+        android:layout_height="56.5dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/comenzar_importanciadelingles"
+        android:onClick="onClick"
+        android:src="@drawable/comenzar_importanciadelingles"/>
 
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/comenzar_importanciadelingles"
-            android:onClick="onClick" />
-    </LinearLayout>
-</LinearLayout>
+</FrameLayout>

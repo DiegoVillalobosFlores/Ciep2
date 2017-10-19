@@ -28,6 +28,7 @@ class FrancesActivity : AppCompatActivity() {
 
     fun onClick(view: View){
         when(view){
+            champagne -> playAudio(R.raw.a4)
             bocina1_pantalla10 -> playAudio(R.raw.a1)
             bocina2_pantalla10 -> playAudio(R.raw.a3)
             bocina3_pantalla10 -> playAudio(R.raw.a2)
@@ -35,7 +36,6 @@ class FrancesActivity : AppCompatActivity() {
             bocina2_pantalla12 -> playAudio(R.raw.a6)
             bocina3_pantalla12 -> playAudio(R.raw.a7)
             bocina4_pantalla12 -> playAudio(R.raw.a8)
-            champagne -> playAudio(R.raw.a4)
             bocina1_pantalla15 -> playAudio(R.raw.a9)
             bocina2_pantalla15 -> playAudio(R.raw.a10)
             bocina1_pantalla16 -> playAudio(R.raw.a11)
@@ -45,9 +45,9 @@ class FrancesActivity : AppCompatActivity() {
             bocina5_pantalla16 -> playAudio(R.raw.a12)
             bocina6_pantalla16 -> playAudio(R.raw.a15)
             bocina1_pantalla18 -> playAudio(R.raw.a17)
+            bocina1_pantalla20 -> playAudio(R.raw.a17)
             bocina2_pantalla18 -> playMultipleAudios(R.raw.a18,R.raw.a13)
             bocina3_pantalla18 -> playMultipleAudios(R.raw.a19,R.raw.a13)
-            bocina1_pantalla20 -> playAudio(R.raw.a17)
             bocina2_pantalla20 -> playMultipleAudios(R.raw.a18,R.raw.a15)
             bocina3_pantalla20 -> playMultipleAudios(R.raw.a19,R.raw.a15)
 

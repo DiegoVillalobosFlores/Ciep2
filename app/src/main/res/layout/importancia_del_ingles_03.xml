@@ -53,8 +53,9 @@
 
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/imagen2_pantalla3_importanciadelingles" />
+                        android:layout_height="200dp"
+                        android:id="@+id/imagen2_pantalla3_importanciadelingles"
+                        android:src="@drawable/ilustracion2_pantalla3_importanciadelingles"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -114,12 +115,13 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="3"
                     android:id="@+id/anterior_pantalla3_importanciadelingles"
-                    android:onClick="onClick">
+                    android:onClick="onClickBack">
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:id="@+id/imagen4_pantalla3_importanciadelingles" />
+                        android:id="@+id/imagen4_pantalla3_importanciadelingles"
+                        android:src="@drawable/boton_anterior_importanciadelingles"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -139,7 +141,8 @@
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:id="@+id/imagen5_pantalla3_importanciadelingles" />
+                        android:id="@+id/imagen5_pantalla3_importanciadelingles"
+                        android:src="@drawable/boton_siguiente_importanciadelingles"/>
                 </LinearLayout>
             </LinearLayout>
 

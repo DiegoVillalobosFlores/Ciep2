@@ -20,6 +20,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:weightSum="20"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:gravity="center_horizontal">
 
                 <TextView
@@ -465,7 +467,7 @@
 
                         <ImageView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="200dp"
                             android:id="@+id/myThoughts_for_mac"
                             android:src="@drawable/my_thoughts_for_mac"/>
                     </LinearLayout>
@@ -488,7 +490,7 @@
 
                         <TextView
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="• FreeMind\n"
                             android:gravity="center"/>

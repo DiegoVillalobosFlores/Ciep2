@@ -149,7 +149,8 @@
                         <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/imagen1_pantalla5_importanciadelingles" />
+                            android:id="@+id/imagen1_pantalla5_importanciadelingles"
+                            android:src="@drawable/creditos_importancia_del_ingles"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -188,12 +189,13 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="3"
                     android:id="@+id/anterior_pantalla5_importanciadelingles"
-                    android:onClick="onClick">
+                    android:onClick="onClickBack">
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:id="@+id/imagen2_pantalla5_importanciadelingles" />
+                        android:id="@+id/imagen2_pantalla5_importanciadelingles"
+                        android:src="@drawable/boton_anterior_importanciadelingles"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -207,14 +209,15 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="3"
-                    android:onClick="onClick"
+                    android:onClick="onFinish"
                     android:id="@+id/salir_importanciadelingles">
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:id="@+id/imagen3_pantalla5_importanciadelingles"
-                        android:longClickable="false" />
+                        android:longClickable="false"
+                        android:src="@drawable/boton_salir_importanciadelingles"/>
                 </LinearLayout>
             </LinearLayout>
 

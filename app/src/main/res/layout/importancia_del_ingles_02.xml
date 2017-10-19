@@ -27,7 +27,8 @@
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:id="@+id/imagen1_pantalla2_importanciadelingles" />
+                    android:id="@+id/imagen1_pantalla2_importanciadelingles"
+                    android:src="@drawable/ilustracion1_pantalla2_importanciadelingles"/>
             </LinearLayout>
 
             <LinearLayout
@@ -91,7 +92,8 @@
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="200dp"
-                        android:id="@+id/imagen3_pantalla2_importanciadelingles" />
+                        android:id="@+id/imagen3_pantalla2_importanciadelingles"
+                        android:src="@drawable/ilustracion3_pantalla2_importanciadelingles"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -124,12 +126,13 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="3"
                 android:id="@+id/anterior_pantalla2_importanciadelingles"
-                android:onClick="onClick">
+                android:onClick="onClickBack">
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:id="@+id/imagen4_pantalla2_importanciadelingles" />
+                    android:id="@+id/imagen4_pantalla2_importanciadelingles"
+                    android:src="@drawable/boton_anterior_importanciadelingles"/>
             </LinearLayout>
 
             <LinearLayout
@@ -149,7 +152,8 @@
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:id="@+id/imagen5_pantalla2_importanciadelingles" />
+                    android:id="@+id/imagen5_pantalla2_importanciadelingles"
+                    android:src="@drawable/boton_siguiente_importanciadelingles"/>
             </LinearLayout>
         </LinearLayout>
 
