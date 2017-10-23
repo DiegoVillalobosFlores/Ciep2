@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#ffffffff">
@@ -8,16 +8,54 @@
 
     <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="200dp"
-        android:id="@+id/imagen1_pantalla1_datosnumericos" />
+        android:layout_height="215dp"
+        android:id="@+id/imagen1_pantalla1_datosnumericos"
+        android:src="@drawable/portada_datosnumericos"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Bienvenido seas a esta guía de habilidades para representar datos numéricos."
+            android:weightSum="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:textIsSelectable="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ilustracion1_pantalla1_datosnumericos"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Una vez ordenados y agrupados los datos numéricos, es de suma utilidad desplegarlos de una manera gráfica, de tal forma que nos permitan observar fácilmente lo que las tablas de datos ordenados no logran."
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textIsSelectable="true" />
+    </LinearLayout>
 
     <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:id="@+id/imagen2_pantalla1_datosnumericos"
         android:onClick="onStart"
         android:layout_gravity="bottom"
         android:src="@drawable/comenzar_estres"/>
 
 
-</LinearLayout>
+</FrameLayout>

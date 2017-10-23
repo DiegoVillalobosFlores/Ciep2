@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:weightSum="10"
+    android:weightSum="20"
     android:background="#ffffffff">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="5"
-        android:weightSum="10">
+        android:layout_weight="8"
+        android:weightSum="1">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="6"
+            android:layout_weight="1"
             android:weightSum="1">
 
             <LinearLayout
@@ -41,7 +43,10 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight=".8"
-                    android:id="@+id/imagen1_pantalla8_datosnumericos" />
+                    android:id="@+id/imagen1_pantalla9_datosnumericos"
+                    app:srcCompat="@drawable/ic_data_usage_black_24dp"
+                    android:tint="@color/Red"
+                    android:layout_marginStart="5dp"/>
             </LinearLayout>
 
             <ImageView
@@ -51,28 +56,37 @@
                 android:src="@drawable/linea_separadora" />
         </LinearLayout>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3.55"
+        android:weightSum="10">
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="4"
-            android:weightSum="5">
+            android:layout_weight="6"
+            android:weightSum="10" >
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:gravity="center"
-                android:layout_weight="4" >
+                android:gravity="top|center"
+                android:layout_weight="8" >
 
                 <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="¿Para qué sirven?"
+                    android:text="¿Cómo se realizan? "
                     android:textStyle="bold"
-                    android:weightSum="1"
                     android:gravity="center"
+                    android:weightSum="1"
                     android:textIsSelectable="true" />
             </LinearLayout>
 
@@ -82,41 +96,58 @@
                 android:layout_height="fill_parent"
                 android:gravity="center"
                 android:weightSum="1"
-                android:layout_weight="1" >
+                android:layout_weight="2" >
 
                 <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
                     android:weightSum="1"
-                    android:layout_gravity="center_vertical"
                     android:gravity="center"
-                    android:text="Las gráficas de pastel se emplean para mostrar proporciones o variaciones de los sectores de un conjunto de datos, también se les conoce como gráficas circulares o de 360º."
-                    android:textIsSelectable="true" />
+                    android:text="Los segmentos se ordenan de mayor a menor, iniciando con el más amplio a partir de las 12, como un reloj, siguiendo el sentido de las manecillas."
+                    android:textIsSelectable="true"
+                    android:layout_gravity="center_vertical" />
             </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imagen2_pantalla9_datosnumericos"
+                android:layout_weight="4"
+                android:src="@drawable/ilustracion1_pantalla9_datosnumericos"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imagen3_pantalla9_datosnumericos"
+                android:layout_weight="6"
+                android:src="@drawable/ilustracion2_pantalla9_datosnumericos"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="5"
-        android:weightSum="7.2">
-
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/imagen2_pantalla8_datosnumericos"
-            android:layout_weight="1.2" />
+        android:layout_weight="8.45"
+        android:weightSum="6.5">
 
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="center"
             android:weightSum="1"
-            android:layout_weight="3"
-            android:src="@drawable/linea_separadora" />
+            android:layout_weight="3.5" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -125,7 +156,7 @@
             android:gravity="center"
             android:layout_gravity="center_horizontal"
             android:weightSum="8"
-            android:layout_weight="3">
+            android:layout_weight="3" >
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -133,15 +164,16 @@
                 android:layout_height="fill_parent"
                 android:weightSum="3"
                 android:layout_weight="2.25"
-                android:id="@+id/intro_anterior_datosnumericos7"
-                android:onClick="onClick"
-                android:gravity="center">
+                android:id="@+id/intro_anterior_datosnumericos8"
+                android:onClick="onClickBack"
+                android:gravity="center" >
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="2.5"
-                    android:id="@+id/imagen3_pantalla8_datosnumericos" />
+                    android:id="@+id/imagen4_pantalla9_datosnumericos"
+                    android:src="@drawable/anterior_datosnumericos"/>
 
             </LinearLayout>
 
@@ -150,15 +182,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="3.5"
-                android:gravity="center">
+                android:gravity="center" >
 
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/sonido8_datosnumericos"
-                    android:onClick="onClick"
-                    android:weightSum="1"
-                    android:src="@drawable/sonido" />
             </LinearLayout>
 
             <LinearLayout
@@ -167,18 +192,17 @@
                 android:layout_height="fill_parent"
                 android:weightSum="3"
                 android:layout_weight="2.25"
-                android:id="@+id/intro_siguiente_datosnumericos7"
+                android:id="@+id/intro_siguiente_datosnumericos8"
                 android:onClick="onClick"
-                android:gravity="center">
+                android:gravity="center" >
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="2.5"
-                    android:id="@+id/imagen4_pantalla8_datosnumericos" />
-
+                    android:id="@+id/imagen5_pantalla9_datosnumericos"
+                    android:src="@drawable/siguiente_datosnumericos"/>
             </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
 </LinearLayout>

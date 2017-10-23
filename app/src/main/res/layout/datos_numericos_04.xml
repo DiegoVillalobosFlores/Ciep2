@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:weightSum="10"
     android:background="#ffffffff">
@@ -16,7 +18,6 @@
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_gravity="center_horizontal"
             android:weightSum="1"
             android:gravity="center"
             android:layout_weight="6">
@@ -55,7 +56,9 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight=".2"
-                        android:id="@+id/imagen1_pantalla4_datosnumericos" />
+                        android:id="@+id/imagen1_pantalla5_datosnumericos"
+                        app:srcCompat="@drawable/ic_noun_113949_cc"
+                        android:tint="@color/Red"/>
 
                     <LinearLayout
                         android:orientation="vertical"
@@ -79,23 +82,22 @@
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:gravity="center"
+            android:gravity="top|center"
             android:layout_weight="4"
-            android:weightSum="3">
+            android:weightSum="10">
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:gravity="center_horizontal"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="2.2">
+                android:gravity="top|center"
+                android:layout_weight="8.7">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="¿Qué son?"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="¿Para qué sirven?"
                     android:textStyle="bold"
                     android:weightSum="1"
                     android:gravity="center"
@@ -103,47 +105,24 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:gravity="center_horizontal"
-                android:layout_gravity="center_horizontal"
-                android:weightSum="10"
-                android:layout_weight=".8">
+                android:gravity="top|center"
+                android:weightSum="1"
+                android:layout_weight="1.3"
+                android:layout_gravity="center_vertical">
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
                     android:weightSum="1"
-                    android:layout_weight="4.5" />
+                    android:gravity="center"
+                    android:text="En realidad provienen de una fracción cuyo denominador es 100, pero que ha sido sustituido por las palabras &quot;por ciento&quot; o escribiendo el simbolo %; es decir, el numerador lo dejamos tal cual, pero en lugar de 100 como denominador, se dice &quot;por ciento&quot;."
+                    android:textIsSelectable="true"
+                    android:layout_gravity="center_vertical" />
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:weightSum="8"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="El porcentaje es un indicador que establece el número de unidades que se tiene por cada 100 de ellas."
-                        android:weightSum="1"
-                        android:layout_gravity="center_vertical"
-                        android:textIsSelectable="true"
-                        android:gravity="center" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:weightSum="1"
-                    android:layout_weight="4.5" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -160,18 +139,21 @@
             android:layout_height="fill_parent"
             android:gravity="center|center_horizontal"
             android:layout_gravity="center_horizontal"
+            android:weightSum="10"
             android:layout_weight="1.2">
 
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_height="fill_parent"
+                android:layout_weight="5">
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:id="@+id/imagen2_pantalla4_datosnumericos" />
+                    android:id="@+id/imagen2_pantalla5_datosnumericos"
+                    android:src="@drawable/ilustracion1_pantalla4_datosnumericos"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -181,8 +163,7 @@
             android:layout_height="fill_parent"
             android:gravity="center"
             android:weightSum="1"
-            android:layout_weight="3"
-            android:src="@drawable/linea_separadora" />
+            android:layout_weight="3" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -199,15 +180,16 @@
                 android:layout_height="fill_parent"
                 android:weightSum="3"
                 android:layout_weight="2.25"
-                android:id="@+id/intro_anterior_datosnumericos3"
-                android:onClick="onClick"
+                android:id="@+id/intro_anterior_datosnumericos4"
+                android:onClick="onClickBack"
                 android:gravity="center">
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="2.5"
-                    android:id="@+id/imagen3_pantalla4_datosnumericos" />
+                    android:id="@+id/imagen3_pantalla5_datosnumericos"
+                    android:src="@drawable/anterior_datosnumericos"/>
 
             </LinearLayout>
 
@@ -218,13 +200,6 @@
                 android:layout_weight="3.5"
                 android:gravity="center">
 
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/sonido4_datosnumericos"
-                    android:onClick="onClick"
-                    android:weightSum="1"
-                    android:src="@drawable/sonido" />
             </LinearLayout>
 
             <LinearLayout
@@ -233,7 +208,7 @@
                 android:layout_height="fill_parent"
                 android:weightSum="3"
                 android:layout_weight="2.25"
-                android:id="@+id/intro_siguiente_datosnumericos3"
+                android:id="@+id/intro_siguiente_datosnumericos4"
                 android:onClick="onClick"
                 android:gravity="center">
 
@@ -241,7 +216,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="2.5"
-                    android:id="@+id/imagen4_pantalla4_datosnumericos" />
+                    android:id="@+id/imagen4_pantalla5_datosnumericos"
+                    android:src="@drawable/siguiente_datosnumericos"/>
 
             </LinearLayout>
         </LinearLayout>

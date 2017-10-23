@@ -4,7 +4,7 @@
     <item
         android:id="@+id/menu_porcentajes"
         android:enabled="true"
-        android:icon="@drawable/ic_noun_440078_cc"
+        android:icon="@drawable/ic_noun_113949_cc"
         android:title="Porcentajes"
         app:showAsAction="ifRoom"/>
     <item
@@ -14,7 +14,7 @@
         android:title="Gráficas"
         app:showAsAction="ifRoom"/>
     <item
-        android:id="@+id/menu_porcentajes"
+        android:id="@+id/menu_histogramas"
         android:enabled="true"
         android:icon="@drawable/ic_assessment_black_24dp"
         android:title="Histogramas"
