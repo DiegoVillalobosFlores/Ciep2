@@ -34,7 +34,6 @@
     <string name="respuesta_13_3">Sigamos haciendo multiplicaciones para encontrar los valores de estos resultados, multiplica cada uno de ellos, el más alto será el de Canadá pues es igual a 15.25. \n \n (2.5)(6.1) = 15.25</string>
     <string name="respuesta_14_2">Se obtiene mediante la suma de todos los valores y su posterior división entre el número de valores.</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intentalo_de_nuevo">Inténtalo de nuevo</string>
 
 </resources>

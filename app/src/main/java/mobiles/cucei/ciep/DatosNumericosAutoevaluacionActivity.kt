@@ -1,5 +1,6 @@
 package mobiles.cucei.ciep
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
@@ -7,7 +8,6 @@ import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import kotlinx.android.synthetic.main.capacidades_para_el_aprendizage_11.*
-import mobiles.cucei.ciep.R.layout.datos_numericos_evaluacion_00
 import kotlinx.android.synthetic.main.datos_numericos_evaluacion_00.*
 import kotlinx.android.synthetic.main.datos_numericos_evaluacion_01.*
 import kotlinx.android.synthetic.main.datos_numericos_evaluacion_02.*
@@ -23,7 +23,7 @@ import kotlinx.android.synthetic.main.datos_numericos_evaluacion_11.*
 import kotlinx.android.synthetic.main.datos_numericos_evaluacion_12.*
 import kotlinx.android.synthetic.main.datos_numericos_evaluacion_13.*
 import kotlinx.android.synthetic.main.datos_numericos_evaluacion_15.*
-import mobiles.cucei.ciep.R.layout.datos_numericos_evaluacion_01
+import mobiles.cucei.ciep.R.layout.*
 
 /**
  * Created by deimi on 10/22/2017.
@@ -34,6 +34,7 @@ class DatosNumericosAutoevaluacionActivity : AppCompatActivity() {
 
     private var currentViewIndex = 0
     private var currentView:View? = null
+    private var correctAnswers = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -133,15 +134,26 @@ class DatosNumericosAutoevaluacionActivity : AppCompatActivity() {
         finish()
     }
 
+    fun onRestart(view: View){
+        val intent = Intent(this,DatosNumericosActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
     fun handleAnswer(view: View,viewCorrect: View,stringId:Int){
         viewCorrect.setBackgroundResource(R.drawable.rectangulo_redondeado_verde)
         showAnswer(view == viewCorrect,view,stringId)
+
+        if(viewsDatosNumericosEvaluacion[currentViewIndex] == datos_numericos_evaluacion_15){
+
+        }
     }
 
     fun showAnswer(correct: Boolean,view: View,stringId: Int){
         val alertDialog = AlertDialog.Builder(this,R.style.DialogTheme)
         if(correct){
             alertDialog.setTitle("Respuesta Correcta")
+            correctAnswers++
         }else{
             view.setBackgroundResource(R.drawable.rectangulo_redondeado_rojo)
             alertDialog.setTitle("Respuesta Incorrecta")
