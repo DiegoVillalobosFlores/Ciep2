@@ -21,7 +21,7 @@
 
     <string name="respuesta_1_4">Para calcular este valor, solo multiplicas el 15% por 20 en su exppresión decimal; o sea, recorriendo el punto dos lugares a la derecha: \n\n (0.15)(20)=3</string>
     <string name="respuesta_2_2">Para calcular este valor, solo multiplicas el 200% por 6 en us expresión decimal; o sea, recorriendo el punto dos lugares a la derecha: \n\n (2)(6)=12</string>
-    <string name="respuesta_3_2">Para calcular este porcentaje, solo divide el total de hombres entre 500 y obtendras la expresión del porcentaje en decimal, para expresar en porcentaje, recorre el punto 2 casillas a la izquierda (multiplica por 100=.</string>
+    <string name="respuesta_3_2">Para calcular este porcentaje, solo divide el total de hombres entre 500 y obtendras la expresión del porcentaje en decimal, para expresar en porcentaje, recorre el punto 2 casillas a la izquierda (multiplica por 100).</string>
     <string name="respuesta_4_4">Para encontra este valor se multiplican los $32,000 por 12% (en decimal). El valor obtenido representa la ganancia que obtuviste. Para obtener la cantidad en loa que lo compraste basta con restar esta cantidad a los $32,000. \n 32,000 x .12 = 3840 \n 32,000 &#8211; 3,840 = 28,160</string>
     <string name="respuesta_5_4">En este caso tenemos una razón, esto es, una fracción que nos representa: \n \n 25%/100% = &#188;</string>
     <string name="respuesta_6_4">En este caso es más fácil resslver por regla de 3: /n Si 60 votos = 100% \n ¿? = 40% \n \n (60)(40)/100 = 24</string>

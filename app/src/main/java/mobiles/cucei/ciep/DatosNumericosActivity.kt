@@ -27,6 +27,8 @@ class DatosNumericosActivity : AppCompatActivity() {
     private var currentAudio:Int = 0
     private val audios:ArrayList<Int> = ArrayList()
 
+    private var mediaPlayer:MediaPlayer = MediaPlayer()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.datos_numericos_01)
@@ -48,6 +50,9 @@ class DatosNumericosActivity : AppCompatActivity() {
 
         currentAudio = R.raw.audio02
         datos_numericos_fab.setOnClickListener{
+            if(mediaPlayer.isPlaying) {
+                mediaPlayer.stop()
+            }
             playAudio()
         }
     }
@@ -64,6 +69,9 @@ class DatosNumericosActivity : AppCompatActivity() {
     }
 
     fun onClick(view:View){
+        if(mediaPlayer.isPlaying){
+            mediaPlayer.stop()
+        }
         when(view){
             intro_siguiente_datosnumericos2 -> datos_numericos_bottom_navigation.selectedItemId = R.id.menu_porcentajes
             intro_siguiente_datosnumericos5 -> datos_numericos_bottom_navigation.selectedItemId = R.id.menu_graficas
@@ -79,6 +87,9 @@ class DatosNumericosActivity : AppCompatActivity() {
     }
 
     fun onClickBack(view: View){
+        if(mediaPlayer.isPlaying){
+            mediaPlayer.stop()
+        }
         when(view){
             intro_anterior_datosnumericos6 -> datos_numericos_bottom_navigation.selectedItemId = R.id.menu_porcentajes
             intro_anterior_datosnumericos9 -> datos_numericos_bottom_navigation.selectedItemId = R.id.menu_graficas
@@ -94,15 +105,22 @@ class DatosNumericosActivity : AppCompatActivity() {
     }
 
     fun onFinish(view: View){
+        if(mediaPlayer.isPlaying){
+            mediaPlayer.stop()
+        }
         finish()
     }
 
     fun startTest(view: View){
+        if(mediaPlayer.isPlaying){
+            mediaPlayer.stop()
+        }
         val intent = Intent(this,DatosNumericosAutoevaluacionActivity::class.java)
         startActivity(intent)
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        if(mediaPlayer.isPlaying) mediaPlayer.stop()
         when(item?.itemId){
             R.id.menu_porcentajes -> changeNavigation(R.layout.datos_numericos_03,R.raw.audio04)
             R.id.menu_graficas -> changeNavigation(R.layout.datos_numericos_06,R.raw.audio07)
@@ -123,7 +141,7 @@ class DatosNumericosActivity : AppCompatActivity() {
 
 
     fun playAudio(){
-        val mediaPlayer = MediaPlayer.create(this,currentAudio)
+        mediaPlayer = MediaPlayer.create(this,currentAudio)
         mediaPlayer.start()
     }
 
