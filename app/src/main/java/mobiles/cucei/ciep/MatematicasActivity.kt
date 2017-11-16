@@ -7,6 +7,6 @@ class MatematicasActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.capacidades_para_el_aprendizage)
+        setContentView(R.layout.capacidades_para_el_aprendizage_01)
     }
 }

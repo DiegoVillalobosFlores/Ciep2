@@ -20,14 +20,14 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="3.5"
-                android:id="@+id/imagen1_pantalla5_capacidadesparaelaprendizaje" />
+                android:id="@+id/imagen1_pantalla6_capacidadesparaelaprendizaje" />
 
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1.5"
                 android:adjustViewBounds="false"
-                android:id="@+id/fondo1_pantalla5_capacidadesparaelaprendizaje" />
+                android:id="@+id/fondo1_pantalla6_capacidadesparaelaprendizaje" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -54,12 +54,13 @@
                         android:layout_height="fill_parent"
                         android:layout_weight="1"
                         android:adjustViewBounds="false"
-                        android:id="@+id/imagen2_pantalla5_capacidadesparaelaprendizaje" />
+                        android:id="@+id/imagen2_pantalla6_capacidadesparaelaprendizaje" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:id="@+id/imagen3_pantalla6_capacidadesparaelaprendizaje" />
 
                     <ImageView
                         android:layout_width="fill_parent"
@@ -122,20 +123,20 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="3"
                     android:weightSum="10"
-                    android:id="@+id/anterior_pantalla5_capacidadesparaelaprendizaje"
+                    android:id="@+id/anterior_pantalla6_capacidadesparaelaprendizaje"
                     android:onClick="onClick" >
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="6"
-                        android:id="@+id/imagen3_pantalla5_capacidadesparaelaprendizaje" />
+                        android:id="@+id/imagen4_pantalla6_capacidadesparaelaprendizaje" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="4"
-                        android:id="@+id/imagen4_pantalla5_capacidadesparaelaprendizaje" />
+                        android:id="@+id/imagen5_pantalla6_capacidadesparaelaprendizaje" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -150,20 +151,20 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="3"
                     android:weightSum="10"
-                    android:id="@+id/siguiente_pantalla5_capacidadesparaelaprendizaje"
+                    android:id="@+id/siguiente_pantalla6_capacidadesparaelaprendizaje"
                     android:onClick="onClick" >
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="4"
-                        android:id="@+id/imagen5_pantalla5_capacidadesparaelaprendizaje" />
+                        android:id="@+id/imagen6_pantalla6_capacidadesparaelaprendizaje" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="6"
-                        android:id="@+id/imagen6_pantalla5_capacidadesparaelaprendizaje" />
+                        android:id="@+id/imagen7_pantalla6_capacidadesparaelaprendizaje" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -192,20 +193,20 @@
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_weight="3.35"></LinearLayout>
+                android:layout_weight="3.9"></LinearLayout>
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_weight="6.65"
-                android:weightSum="7.35" >
+                android:layout_weight="6.1"
+                android:weightSum="7" >
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:layout_weight="1.04"
+                    android:layout_weight="1"
                     android:weightSum="20">
 
                     <LinearLayout
@@ -219,7 +220,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="5"
-                        android:id="@+id/opcion1_pantalla5_capacidadesparaelaprendizaje"
+                        android:id="@+id/opcion1_pantalla6_capacidadesparaelaprendizaje"
                         android:onClick="onClick" />
 
                     <LinearLayout
@@ -233,7 +234,7 @@
                     android:orientation="vertical"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:layout_weight="1.10" >
+                    android:layout_weight="1" >
 
                 </LinearLayout>
 
@@ -255,7 +256,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="5"
-                        android:id="@+id/opcion2_pantalla5_capacidadesparaelaprendizaje"
+                        android:id="@+id/opcion2_pantalla6_capacidadesparaelaprendizaje"
                         android:onClick="onClick" />
 
                     <LinearLayout
@@ -269,7 +270,7 @@
                     android:orientation="vertical"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:layout_weight="1.05" />
+                    android:layout_weight=".97" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -289,7 +290,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="5"
-                        android:id="@+id/opcion3_pantalla5_capacidadesparaelaprendizaje"
+                        android:id="@+id/opcion3_pantalla6_capacidadesparaelaprendizaje"
                         android:onClick="onClick" />
 
                     <LinearLayout
@@ -303,13 +304,13 @@
                     android:orientation="vertical"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:layout_weight="1.07" />
+                    android:layout_weight=".97" />
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:layout_weight="1.03"
+                    android:layout_weight="1"
                     android:weightSum="20" >
 
                     <LinearLayout
@@ -323,7 +324,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="5"
-                        android:id="@+id/opcion4_pantalla5_capacidadesparaelaprendizaje"
+                        android:id="@+id/opcion4_pantalla6_capacidadesparaelaprendizaje"
                         android:onClick="onClick" />
 
                     <LinearLayout
@@ -359,13 +360,13 @@
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_weight="3.6" />
+                android:layout_weight="4" />
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_weight="6.4"
+                android:layout_weight="6"
                 android:weightSum="4" >
 
                 <LinearLayout
@@ -392,7 +393,7 @@
                         <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
-                            android:id="@+id/respuesta1_pantalla5_capacidadesparaelaprendizaje"
+                            android:id="@+id/respuesta1_pantalla6_capacidadesparaelaprendizaje"
                             android:layout_weight="4.3" />
 
                         <LinearLayout
@@ -433,7 +434,7 @@
                         <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
-                            android:id="@+id/respuesta2_pantalla5_capacidadesparaelaprendizaje"
+                            android:id="@+id/respuesta2_pantalla6_capacidadesparaelaprendizaje"
                             android:layout_weight="4.3" />
 
                         <LinearLayout
@@ -474,19 +475,19 @@
                             android:orientation="vertical"
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
-                            android:layout_weight="4.9" />
+                            android:layout_weight="5" />
 
                         <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
-                            android:id="@+id/respuesta3_pantalla5_capacidadesparaelaprendizaje"
+                            android:id="@+id/respuesta3_pantalla6_capacidadesparaelaprendizaje"
                             android:layout_weight="2" />
 
                         <LinearLayout
                             android:orientation="vertical"
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
-                            android:layout_weight="3.1" />
+                            android:layout_weight="3" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -525,7 +526,7 @@
                         <ImageView
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
-                            android:id="@+id/respuesta4_pantalla5_capacidadesparaelaprendizaje"
+                            android:id="@+id/respuesta4_pantalla6_capacidadesparaelaprendizaje"
                             android:layout_weight="2" />
 
                         <LinearLayout
@@ -539,7 +540,7 @@
                         android:orientation="vertical"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight="2.1" />
+                        android:layout_weight="2.2" />
                 </LinearLayout>
 
             </LinearLayout>
