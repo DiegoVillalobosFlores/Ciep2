@@ -10,12 +10,12 @@ import android.view.View
 import kotlinx.android.synthetic.main.datos_numericos_00.*
 import kotlinx.android.synthetic.main.datos_numericos_02.*
 import kotlinx.android.synthetic.main.datos_numericos_05.*
-import kotlinx.android.synthetic.main.datos_numericos_05.view.*
 import kotlinx.android.synthetic.main.datos_numericos_06.*
 import kotlinx.android.synthetic.main.datos_numericos_08.*
 import kotlinx.android.synthetic.main.datos_numericos_09.*
 import kotlinx.android.synthetic.main.datos_numericos_11.*
 import kotlinx.android.synthetic.main.datos_numericos_12.*
+import mobiles.cucei.ciep.AutoEvaluaciones.DatosNumericos
 import mobiles.cucei.ciep.R.layout.*
 
 class DatosNumericosActivity : AppCompatActivity() {
@@ -115,7 +115,7 @@ class DatosNumericosActivity : AppCompatActivity() {
         if(mediaPlayer.isPlaying){
             mediaPlayer.stop()
         }
-        val intent = Intent(this,DatosNumericosAutoevaluacionActivity::class.java)
+        val intent = Intent(this, DatosNumericos::class.java)
         startActivity(intent)
     }
 

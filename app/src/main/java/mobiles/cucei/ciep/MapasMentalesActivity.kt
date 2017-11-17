@@ -7,29 +7,24 @@ import mobiles.cucei.ciep.R.layout.mapas_mentales_01
 
 class MapasMentalesActivity : AppCompatActivity() {
 
-    private val viewsMapas:ArrayList<Int> = ArrayList()
-    private var currentView = 0
+    private var currentView = mapas_mentales_01
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.mapas_mentales_01)
-
-        for(cont in 0..18){
-            viewsMapas.add(mapas_mentales_01 + cont)
-        }
     }
 
     fun onClick(view: View){
-        setContentView(viewsMapas[currentView] + 1)
         currentView++
+        setContentView(currentView)
     }
 
-    fun onClickBack(view:View){
-        setContentView(viewsMapas[currentView] - 1)
+    fun onClickBack(view: View){
         currentView--
+        setContentView(currentView)
     }
 
-    fun onFinish(view:View){
+    fun onFinish(view: View){
         finish()
     }
 }

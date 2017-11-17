@@ -12,12 +12,6 @@
         android:layout_weight="3"
         android:weightSum="10" >
 
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="3"
-            android:id="@+id/imagen1_pantalla2_capacidadesparaelaprendizaje" />
-
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
@@ -29,105 +23,80 @@
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_weight="4"></LinearLayout>
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="2"
-                android:id="@+id/menu_pantallas2_capacidadesparaelaprendizaje"
-                android:onClick="onClick" />
+                android:layout_weight="4"/>
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_weight="4"></LinearLayout>
+                android:layout_weight="4"/>
         </LinearLayout>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:id="@+id/imagen1_pantalla2_capacidadesparaelaprendizaje"
+            android:src="@drawable/texto_pantalla2_capacidadesparaelaprendizaje"/>
 
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="3"
-            android:id="@+id/imagen2_pantalla2_capacidadesparaelaprendizaje" />
+            android:id="@+id/imagen2_pantalla2_capacidadesparaelaprendizaje"
+            android:src="@drawable/ilustracion_pantalla2_capacidadesparaelaprendizaje"/>
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="17"
-        android:weightSum="20">
+        android:layout_weight="17">
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="9.5"></LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:weightSum="10" >
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="3"
-                android:weightSum="10"
-                android:id="@+id/anterior_pantalla2_capacidadesparaelaprendizaje"
-                android:onClick="onClick">
-
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="6"
-                    android:id="@+id/imagen3_pantalla2_capacidadesparaelaprendizaje" />
-
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="4"
-                    android:id="@+id/imagen4_pantalla2_capacidadesparaelaprendizaje" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="4" />
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="3"
-                android:weightSum="10"
-                android:id="@+id/siguiente_pantalla2_capacidadesparaelaprendizaje"
-                android:onClick="onClick">
-
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="4"
-                    android:id="@+id/imagen5_pantalla2_capacidadesparaelaprendizaje" />
-
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="6"
-                    android:id="@+id/imagen6_pantalla2_capacidadesparaelaprendizaje" />
-            </LinearLayout>
+            android:onClick="onClickBack"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:background="?selectableItemBackground">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/boton_anterior_capacidadesparaelaprendizaje"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:background="?selectableItemBackground">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:layout_gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                android:layout_marginRight="16dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/boton_siguiente_capacidadesparaelaprendizaje"
+                android:layout_marginEnd="16dp"/>
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="9.5" />
     </LinearLayout>
 
 </LinearLayout>

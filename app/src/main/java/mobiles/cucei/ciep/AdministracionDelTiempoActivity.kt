@@ -7,26 +7,21 @@ import mobiles.cucei.ciep.R.layout.administracion_del_tiempo_01
 
 class AdministracionDelTiempoActivity : AppCompatActivity() {
 
-    private val viewsADT:ArrayList<Int> = ArrayList()
-    private var currentView = 0
+    private var currentView = administracion_del_tiempo_01
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.administracion_del_tiempo_01)
-
-        for(cont in 0..22){
-            viewsADT.add(administracion_del_tiempo_01+cont)
-        }
     }
 
     fun onClick(view: View){
-        setContentView(viewsADT[currentView+1])
         currentView++
+        setContentView(currentView)
     }
 
     fun onClickBack(view: View){
-        setContentView(viewsADT[currentView-1])
         currentView--
+        setContentView(currentView)
     }
 
     fun onFinish(view: View){

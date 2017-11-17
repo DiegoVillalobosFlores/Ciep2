@@ -14,19 +14,17 @@ import mobiles.cucei.ciep.R.layout.frances_01
 
 class FrancesActivity : AppCompatActivity() {
 
-    private val viewsFrances:ArrayList<Int> = ArrayList()
-    private var currentView:Int = 0
+    private var currentView = frances_01
+    private var mediaPlayer:MediaPlayer = MediaPlayer()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.frances_01)
 
-        for(cont in 0..20){
-            viewsFrances.add(frances_01+cont)
-        }
     }
 
     fun onClick(view: View){
+        if(mediaPlayer.isPlaying) mediaPlayer.stop()
         when(view){
             champagne -> playAudio(R.raw.a4)
             bocina1_pantalla10 -> playAudio(R.raw.a1)
@@ -52,28 +50,32 @@ class FrancesActivity : AppCompatActivity() {
             bocina3_pantalla20 -> playMultipleAudios(R.raw.a19,R.raw.a15)
 
             else -> {
-                setContentView(viewsFrances[currentView +1])
                 currentView++
+                setContentView(currentView)
             }
         }
     }
 
     fun onClickBack(view: View){
-        setContentView(viewsFrances[currentView -1])
+        if(mediaPlayer.isPlaying) mediaPlayer.stop()
         currentView--
+        setContentView(currentView)
     }
 
     fun onFinish(view: View){
+        if(mediaPlayer.isPlaying) mediaPlayer.stop()
         finish()
     }
 
     fun playAudio(audio:Int){
-        val mediaPlayer = MediaPlayer.create(this,audio)
+        if(mediaPlayer.isPlaying) mediaPlayer.stop()
+        mediaPlayer = MediaPlayer.create(this,audio)
         mediaPlayer.start()
     }
 
     fun playMultipleAudios(firstAudio:Int,secondAudio:Int){
-        var mediaPlayer = MediaPlayer.create(this,firstAudio)
+        if(mediaPlayer.isPlaying) mediaPlayer.stop()
+        mediaPlayer = MediaPlayer.create(this,firstAudio)
         mediaPlayer.start()
         mediaPlayer.setOnCompletionListener { mediaPlayer = MediaPlayer.create(this,secondAudio)
             mediaPlayer.start()

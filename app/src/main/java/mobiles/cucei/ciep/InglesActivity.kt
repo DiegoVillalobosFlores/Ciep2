@@ -13,26 +13,22 @@ import mobiles.cucei.ciep.R.layout.importancia_del_ingles_01
 
 class InglesActivity : AppCompatActivity() {
 
-    private val viewsIngles:ArrayList<Int> = ArrayList()
-    private var currentView:Int = 0
+    private var currentView = importancia_del_ingles_01
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.importancia_del_ingles_01)
 
-        for(cont in 0..4){
-            viewsIngles.add(importancia_del_ingles_01+cont)
-        }
     }
 
     fun onClick(view: View){
-        setContentView(viewsIngles[currentView] + 1)
         currentView++
+        setContentView(currentView)
     }
 
     fun onClickBack(view: View){
-        setContentView(viewsIngles[currentView] - 1)
         currentView--
+        setContentView(currentView)
     }
 
     fun onFinish(view: View){
@@ -60,13 +56,13 @@ class InglesActivity : AppCompatActivity() {
         }
     }
 
-    fun displayInfo(drawable: Int){
+    private fun displayInfo(drawable: Int){
         val image = ImageView(this)
         image.setImageDrawable(ContextCompat.getDrawable(this,drawable))
         image.setBackgroundColor(ContextCompat.getColor(this,R.color.White))
-        val alerDialog = AlertDialog.Builder(this)
+        val alertDialog = AlertDialog.Builder(this)
                 .setView(image)
                 .create()
-        alerDialog.show()
+        alertDialog.show()
     }
 }

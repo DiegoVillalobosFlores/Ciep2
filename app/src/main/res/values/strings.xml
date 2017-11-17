@@ -19,6 +19,9 @@
     <string name="menuguia10">Submenu Guia 10</string>
     <string name="menuguia11">Submenu Guia 11</string>
 
+    <string name="back">Anterior</string>
+    <string name="next">Siguiente</string>
+
     <string name="respuesta_1_4">Para calcular este valor, solo multiplicas el 15% por 20 en su exppresión decimal; o sea, recorriendo el punto dos lugares a la derecha: \n\n (0.15)(20)=3</string>
     <string name="respuesta_2_2">Para calcular este valor, solo multiplicas el 200% por 6 en us expresión decimal; o sea, recorriendo el punto dos lugares a la derecha: \n\n (2)(6)=12</string>
     <string name="respuesta_3_2">Para calcular este porcentaje, solo divide el total de hombres entre 500 y obtendras la expresión del porcentaje en decimal, para expresar en porcentaje, recorre el punto 2 casillas a la izquierda (multiplica por 100).</string>
