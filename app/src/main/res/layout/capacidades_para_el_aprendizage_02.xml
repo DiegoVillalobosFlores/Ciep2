@@ -15,33 +15,22 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="4"
-            android:weightSum="10">
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="4"/>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="4"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/ilustracion1_pantalla2_estres"/>
         </LinearLayout>
         <ImageView
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="3"
+            android:layout_height="wrap_content"
             android:id="@+id/imagen1_pantalla2_capacidadesparaelaprendizaje"
             android:src="@drawable/texto_pantalla2_capacidadesparaelaprendizaje"/>
 
         <ImageView
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="3"
+            android:layout_height="wrap_content"
             android:id="@+id/imagen2_pantalla2_capacidadesparaelaprendizaje"
             android:src="@drawable/ilustracion_pantalla2_capacidadesparaelaprendizaje"/>
     </LinearLayout>
@@ -65,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/boton_anterior_capacidadesparaelaprendizaje"
                 android:layout_gravity="center"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="8dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -94,7 +83,7 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/boton_siguiente_capacidadesparaelaprendizaje"
-                android:layout_marginEnd="16dp"/>
+                android:layout_marginEnd="8dp"/>
         </LinearLayout>
 
     </LinearLayout>

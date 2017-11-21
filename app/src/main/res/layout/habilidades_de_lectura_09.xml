@@ -82,13 +82,15 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/imagen1_pantalla9_habilidadesdelectura"
-                android:layout_weight="6" />
+                android:layout_weight="6"
+                android:src="@drawable/ilustracion1_pantalla9_habilidadesdelectura"/>
 
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/imagen2_pantalla9_habilidadesdelectura"
-                android:layout_weight="4" />
+                android:layout_weight="4"
+                android:src="@drawable/ilustracion2_pantalla9_habilidadesdelectura"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -118,12 +120,13 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="3"
                 android:id="@+id/anterior_pantalla9_habilidadesdelectura"
-                android:onClick="onClick">
+                android:onClick="onClickBack">
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:id="@+id/imagen3_pantalla9_habilidadesdelectura" />
+                    android:id="@+id/imagen3_pantalla9_habilidadesdelectura"
+                    android:src="@drawable/anterior_habilidadesdelectura"/>
             </LinearLayout>
 
             <LinearLayout
@@ -143,7 +146,8 @@
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:id="@+id/imagen4_pantalla9_habilidadesdelectura" />
+                    android:id="@+id/imagen4_pantalla9_habilidadesdelectura"
+                    android:src="@drawable/siguiente_habilidadesdelectura"/>
             </LinearLayout>
         </LinearLayout>
 

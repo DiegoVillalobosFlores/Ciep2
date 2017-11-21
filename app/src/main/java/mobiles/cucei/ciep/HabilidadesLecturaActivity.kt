@@ -32,4 +32,8 @@ class HabilidadesLecturaActivity : AppCompatActivity() {
     fun onFinish(view: View){
         finish()
     }
+
+    fun startTest(view: View){
+
+    }
 }

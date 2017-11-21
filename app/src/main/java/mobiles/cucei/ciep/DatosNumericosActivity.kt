@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.datos_numericos_08.*
 import kotlinx.android.synthetic.main.datos_numericos_09.*
 import kotlinx.android.synthetic.main.datos_numericos_11.*
 import kotlinx.android.synthetic.main.datos_numericos_12.*
-import mobiles.cucei.ciep.AutoEvaluaciones.DatosNumericos
+import mobiles.cucei.ciep.autoevaluaciones.DatosNumericos
 import mobiles.cucei.ciep.R.layout.*
 
 class DatosNumericosActivity : AppCompatActivity() {

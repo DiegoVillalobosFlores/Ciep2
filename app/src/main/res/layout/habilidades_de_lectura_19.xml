@@ -13,7 +13,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/encabezado"/>
+            android:id="@+id/encabezado"
+            android:src="@drawable/encabezado_habilidadesdelectura"/>
     </LinearLayout>
 
     <LinearLayout
@@ -25,16 +26,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pngamos en práctica la habilidad para recoocer la donfiabilidad de una fuente\n"
+            android:text="Pongamos en práctica la habilidad para reconocer la confiabilidad de una fuente\n"
             android:layout_gravity="center"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:paddingTop="20dp"
-            android:textSize="18dp" />
+            android:textSize="18sp" />
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/libro" />
+            android:id="@+id/libro"
+            android:src="@drawable/ilustracion"/>
 
 
     </LinearLayout>
@@ -48,10 +50,11 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="85dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="60dp"
             android:onClick="onClick"
-            android:id="@+id/comenxar" />
+            android:id="@+id/comenxar"
+            android:src="@drawable/empecemos"/>
     </LinearLayout>
 
 </LinearLayout>

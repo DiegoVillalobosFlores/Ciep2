@@ -46,7 +46,8 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imagen1_pantalla4_habilidadesdelectura" />
+                        android:id="@+id/imagen1_pantalla4_habilidadesdelectura"
+                        android:src="@drawable/ilustracion1_pantalla4_habilidadesdelectura"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -59,7 +60,8 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imagen2_pantalla4_habilidadesdelectura" />
+                        android:id="@+id/imagen2_pantalla4_habilidadesdelectura"
+                        android:src="@drawable/ilustracion2_pantalla4_habilidadesdelectura"/>
 
                 </LinearLayout>
 
@@ -98,12 +100,13 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="3"
                     android:id="@+id/anterior_pantalla4_habilidadesdelectura"
-                    android:onClick="onClick">
+                    android:onClick="onClickBack">
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:id="@+id/imagen3_pantalla4_habilidadesdelectura" />
+                        android:id="@+id/imagen3_pantalla4_habilidadesdelectura"
+                        android:src="@drawable/anterior_habilidadesdelectura"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -123,7 +126,8 @@
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:id="@+id/imagen4_pantalla4_habilidadesdelectura" />
+                        android:id="@+id/imagen4_pantalla4_habilidadesdelectura"
+                        android:src="@drawable/siguiente_habilidadesdelectura"/>
                 </LinearLayout>
             </LinearLayout>
 

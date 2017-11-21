@@ -21,6 +21,7 @@
 
     <string name="back">Anterior</string>
     <string name="next">Siguiente</string>
+    <string name="test">Autoevaluación</string>
 
     <string name="respuesta_1_4">Para calcular este valor, solo multiplicas el 15% por 20 en su exppresión decimal; o sea, recorriendo el punto dos lugares a la derecha: \n\n (0.15)(20)=3</string>
     <string name="respuesta_2_2">Para calcular este valor, solo multiplicas el 200% por 6 en us expresión decimal; o sea, recorriendo el punto dos lugares a la derecha: \n\n (2)(6)=12</string>

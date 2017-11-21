@@ -1,4 +1,4 @@
-package mobiles.cucei.ciep.AutoEvaluaciones
+package mobiles.cucei.ciep.autoevaluaciones
 
 import android.content.Intent
 import android.graphics.drawable.Drawable
