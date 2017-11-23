@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:background="#ffffff"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:weightSum="20"
+    android:id="@+id/evaluacion_main">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2.- Es más confiable la opinión en el blog de un usuario anónimo que el artículo de un academico reconocido en la materia\n"
+            android:text="1.- La información de un libro de danza escrito por un bailarín con experiencia y que ha escrito varios artículos en revistas especializadas es confiable\n"
             android:textSize="18sp"
             android:paddingTop="20dp"
             android:layout_marginLeft="20dp"
@@ -37,7 +38,7 @@
             <ImageView
                 android:layout_width="147dp"
                 android:layout_height="47dp"
-                android:id="@+id/verdadero2"
+                android:id="@+id/verdadero1"
                 android:layout_gravity="bottom|center_horizontal"
                 android:src="@drawable/verdadero"
                 android:onClick="onClick"
@@ -52,24 +53,25 @@
             <ImageView
                 android:layout_width="147dp"
                 android:layout_height="47dp"
-                android:id="@+id/falso2"
+                android:id="@+id/falso1"
                 android:layout_gravity="bottom|center_horizontal"
-                android:onClick="onClick"
-                android:src="@drawable/falso"/>
+                android:src="@drawable/falso"
+                android:onClick="onClick"/>
         </LinearLayout>
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="10"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center"
         android:weightSum="1">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:src="@drawable/botonpreg2"
-            android:id="@+id/sigui2"
+            android:src="@drawable/botonpreg1"
+            android:id="@+id/sig1"
             android:onClick="onClick" />
 
     </LinearLayout>
