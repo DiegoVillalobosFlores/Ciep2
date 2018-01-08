@@ -29,6 +29,8 @@
                     android:textAppearance="@android:style/TextAppearance.Large"
                     android:id="@+id/texto1"
                     android:textSize="30sp"
+                    android:text="Felicidades"
+                    android:textColor="@color/Blue"
                     android:textStyle="bold" />
             </LinearLayout>
 

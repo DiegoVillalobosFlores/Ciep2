@@ -4,8 +4,11 @@ import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
+import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
+import kotlinx.android.synthetic.main.datos_numericos_evaluacion_00.*
+import kotlinx.android.synthetic.main.habilidades_de_lectura_evaluacion_00.*
 import kotlinx.android.synthetic.main.habilidades_de_lectura_evaluacion_01.*
 import kotlinx.android.synthetic.main.habilidades_de_lectura_evaluacion_02.*
 import kotlinx.android.synthetic.main.habilidades_de_lectura_evaluacion_03.*
@@ -18,14 +21,23 @@ import mobiles.cucei.ciep.R.layout.habilidades_de_lectura_evaluacion_01
  */
 class HabilidadesLectura : AppCompatActivity() {
 
-    private var currentView = habilidades_de_lectura_evaluacion_01
+    private var currentView:View ? = null
+    private var currentViewIndex:Int = habilidades_de_lectura_evaluacion_01
     private var correctas = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.habilidades_de_lectura_evaluacion_01)
+        setContentView(R.layout.habilidades_de_lectura_evaluacion_00)
 
+        setFrameView(R.layout.habilidades_de_lectura_evaluacion_01)
+    }
 
+    fun setFrameView(view:Int){
+        val layout = LayoutInflater.from(this).inflate(view,null)
+        main_lectura_evaluacion.removeAllViews()
+        main_lectura_evaluacion.addView(layout)
+
+        currentView = layout
     }
 
     fun onClick(view: View){
@@ -42,11 +54,6 @@ class HabilidadesLectura : AppCompatActivity() {
             verdadero4 -> evaluateAnswer(verdadero4,verdadero4,true)
             falso4 -> evaluateAnswer(falso4,verdadero1,true)
         }
-    }
-
-    private fun nextQuestion(){
-        currentView++;
-        setContentView(currentView)
     }
 
     private fun evaluateAnswer(view: ImageView, correctView: ImageView, verdadero:Boolean){
@@ -73,5 +80,7 @@ class HabilidadesLectura : AppCompatActivity() {
             mensaje = "Respuesta Correcta"
             correctas++
         }
+        currentViewIndex++
+        Snackbar.make(main_lectura_evaluacion,mensaje,Snackbar.LENGTH_INDEFINITE).setAction("Siguiente",{setFrameView(currentViewIndex)}).show()
     }
 }
