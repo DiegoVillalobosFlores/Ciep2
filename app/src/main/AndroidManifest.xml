@@ -25,7 +25,7 @@
         <activity android:name=".MatematicasActivity"/>
         <activity android:name=".HabilidadesLecturaActivity"/>
         <activity android:name=".ForosActivity"/>
-        <activity android:name=".ExcelActivity"/>
+        <activity android:name=".ExcelActivity" android:theme="@style/AppTheme"/>
         <activity android:name=".autoevaluaciones.DatosNumericos" android:theme="@style/AppTheme"/>
         <activity android:name=".autoevaluaciones.HabilidadesLectura" android:theme="@style/AppTheme"/>
     </application>

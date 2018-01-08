@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:title="@string/funciones"
+        android:id="@+id/title_funciones">
+        <menu>
+            <item android:title="Texto" android:id="@+id/excel_menu_texto"/>
+            <item android:title="Lógicas" android:id="@+id/excel_menu_logicas"/>
+            <item android:title="Matemáticas y trigonométricas" android:id="@+id/excel_menu_mate"/>
+        </menu>
+    </item>
+    <item android:title="@string/referencias">
+        <menu>
+            <item android:title="Estilo A1" android:id="@+id/excel_menu_estilo_a1"/>
+            <item android:title="Relativas y absolutas" android:id="@+id/excel_menu_relativas"/>
+        </menu>
+    </item>
+    <item android:title="@string/filtros">
+        <menu>
+            <item android:title="Rápido" android:id="@+id/excel_menu_rapido"/>
+            <item android:title="Texto o números específicos" android:id="@+id/excel_menu_texto_o_numeros"/>
+            <item android:title="Filtrado por color" android:id="@+id/excel_menu_color"/>
+        </menu>
+    </item>
+    <item android:title="@string/graficos">
+        <menu>
+            <item android:title="Crear gráfico" android:id="@+id/excel_menu_grafico"/>
+            <item android:title="Diseño y Estilos" android:id="@+id/excel_menu_estilos"/>
+            <item android:title="Titulos y Etiquetas" android:id="@+id/excel_menu_etiquetas"/>
+        </menu>
+    </item>
+    <item android:title="Navegación">
+        <menu>
+            <item android:title="Introducción" android:id="@+id/excel_menu_intro"/>
+            <item android:title="@string/actividad" android:id="@+id/excel_menu_actividad"/>
+            <item android:title="Salir" android:id="@+id/excel_menu_salir"/>
+        </menu>
+    </item>
+</menu>

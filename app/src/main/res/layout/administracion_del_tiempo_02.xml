@@ -24,7 +24,6 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:id="@+id/imagen1_pantalla2_mapasmentales"
                     android:src="@drawable/ilustracion1_pantalla2_mapasmentales"/>
 
                 <TextView

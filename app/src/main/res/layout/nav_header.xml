@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/White"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="0dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Excel Avanzado"
+            android:layout_gravity="bottom"
+            android:textColor="@color/Green"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

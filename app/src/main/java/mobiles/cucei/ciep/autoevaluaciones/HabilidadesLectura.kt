@@ -73,6 +73,5 @@ class HabilidadesLectura : AppCompatActivity() {
             mensaje = "Respuesta Correcta"
             correctas++
         }
-        Snackbar.make(currentView,mensaje,Snackbar.LENGTH_INDEFINITE).setAction("Continuar",{nextQuestion()}).show()
     }
 }

@@ -39,5 +39,11 @@
     <string name="respuesta_14_2">Se obtiene mediante la suma de todos los valores y su posterior división entre el número de valores.</string>
 
     <string name="intentalo_de_nuevo">Inténtalo de nuevo</string>
+    
+    <string name="funciones">Funciones</string>
+    <string name="referencias">Celdas y rangos</string>
+    <string name="filtros">Filtros de datos</string>
+    <string name="graficos">Gráficos</string>
+    <string name="actividad">Actividad</string>
 
 </resources>

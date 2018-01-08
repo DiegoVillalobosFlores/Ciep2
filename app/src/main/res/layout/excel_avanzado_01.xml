@@ -17,7 +17,8 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="5"
-            android:id="@+id/fondo1_pantalla1_excelavanzado" />
+            android:id="@+id/fondo1_pantalla1_excelavanzado"
+            android:background="@drawable/bienvenida_excel01"/>
 
         <LinearLayout
             android:orientation="vertical"
@@ -31,13 +32,15 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
-                android:id="@+id/imagen1_pantalla1_excelavanzado" />
+                android:id="@+id/imagen1_pantalla1_excelavanzado"
+                android:src="@drawable/ilustracion1_bienvenida_excel"/>
 
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/imagen2_pantalla1_excelavanzado"
-                android:layout_weight="4" />
+                android:layout_weight="4"
+                android:src="@drawable/bienvenida_excelavanzado"/>
 
         </LinearLayout>
 
@@ -53,6 +56,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/comenzar_excelavanzado"
-            android:onClick="onClick" />
+            android:onClick="onClick"
+            android:src="@drawable/comencemos_excel"/>
     </LinearLayout>
 </LinearLayout>
