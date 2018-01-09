@@ -16,34 +16,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/White"
-                app:titleTextColor="@color/Green"
-                app:layout_scrollFlags="scroll|enterAlways|snap"/>
+                app:titleTextColor="@color/Green" />
         </android.support.design.widget.AppBarLayout>
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="?actionBarSize"
-            android:id="@+id/excel_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="8dp"
-                    android:src="@drawable/ilustracion1_pantalla2_mapasmentales"/>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:src="@drawable/imagen2_pantalla3_excelavanzado"/>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/imagen3_pantalla3_excelavanzado"/>
-            </LinearLayout>
-        </FrameLayout>
+            android:id="@+id/excel_content"/>
     </android.support.design.widget.CoordinatorLayout>
     <!-- The navigation drawer -->
     <android.support.design.widget.NavigationView

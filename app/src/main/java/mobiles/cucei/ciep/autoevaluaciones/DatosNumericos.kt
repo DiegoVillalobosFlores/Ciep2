@@ -1,5 +1,6 @@
 package mobiles.cucei.ciep.autoevaluaciones
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -136,8 +137,8 @@ class DatosNumericos : AppCompatActivity() {
 
             else -> {
                 datos_numericos_evaluacion_text_numero_pagina.setText((currentViewIndex+2).toString() + "/14")
-                setFrameView(viewsDatosNumericosEvaluacion[currentViewIndex + 1])
                 currentViewIndex++
+                setFrameView(viewsDatosNumericosEvaluacion[currentViewIndex])
             }
         }
     }
@@ -164,6 +165,14 @@ class DatosNumericos : AppCompatActivity() {
         val draw:Drawable = ContextCompat.getDrawable(this, R.drawable.estrella_bien_datosnumericos)
         for(cont in 0 until avg){
             starsViews[cont].setImageDrawable(draw)
+        }
+
+        if(avg >= 4){
+            val bigStar = ContextCompat.getDrawable(this,R.drawable.estrellagrande)
+            texto1_pantalla28_datosnumericos.text = "!Felicidades¡"
+            texto2_pantalla28_datosnumericos.text = "Haz completado con éxito la guía de aprendizaje:"
+            imagen2_pantalla28_datosnumericos.visibility = View.INVISIBLE
+            imagen1_pantalla28_datosnumericos.setImageDrawable(bigStar)
         }
     }
 

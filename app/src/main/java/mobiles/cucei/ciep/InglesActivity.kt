@@ -7,7 +7,6 @@ import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
 import android.view.View
 import android.widget.ImageView
-import kotlinx.android.synthetic.main.fragment_ficha_aldiko_fragment.*
 import kotlinx.android.synthetic.main.importancia_del_ingles_04.*
 import mobiles.cucei.ciep.R.layout.importancia_del_ingles_01
 

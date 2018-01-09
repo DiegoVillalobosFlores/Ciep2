@@ -9,6 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="3"
+        android:src="@drawable/texto_pantalla11_forosvirtuales"
         android:id="@+id/fondo1_pantalla11_forosvirtuales" />
 
     <LinearLayout
@@ -38,18 +39,20 @@
                 android:layout_weight="3"
                 android:weightSum="10"
                 android:id="@+id/anterior_pantalla11_forosvirtuales"
-                android:onClick="onClick">
+                android:onClick="onClickBack">
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="6"
+                    android:src="@drawable/boton_anterior_forosvirtuales"
                     android:id="@+id/imagen1_pantalla11_forosvirtuales" />
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="4"
+                    android:src="@drawable/texto_anterior_forosvirtuales"
                     android:id="@+id/imagen2_pantalla11_forosvirtuales" />
             </LinearLayout>
 
@@ -73,12 +76,14 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="4"
                     android:focusableInTouchMode="false"
+                    android:src="@drawable/texto_siguiente_forosvirtuales"
                     android:id="@+id/imagen3_pantalla11_forosvirtuales" />
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="6"
+                    android:src="@drawable/boton_siguiente_forosvirtuales"
                     android:id="@+id/imagen4_pantalla11_forosvirtuales" />
             </LinearLayout>
         </LinearLayout>

@@ -27,12 +27,14 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:adjustViewBounds="true"
+                        android:src="@drawable/panal_superior_forosvirtuales"
                         android:id="@+id/imagen1_pantalla16_forosvirtuales" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:adjustViewBounds="true"
+                        android:src="@drawable/texto_pantalla16_forosvirtuales"
                         android:id="@+id/imagen2_pantalla16_forosvirtuales" />
                 </LinearLayout>
             </ScrollView>
@@ -50,7 +52,8 @@
                 android:layout_height="fill_parent"
                 android:id="@+id/salir_forosvirtuales"
                 android:adjustViewBounds="false"
-                android:onClick="onClick" />
+                android:src="@drawable/boton_salir_forosvirtuales"
+                android:onClick="onFinish" />
         </LinearLayout>
 
     </LinearLayout>

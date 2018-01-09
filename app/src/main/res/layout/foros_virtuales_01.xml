@@ -17,6 +17,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="5"
+            android:background="@drawable/portada_forosvirtuales"
             android:id="@+id/fondo1_pantalla1_forosvirtuales">
 
         </LinearLayout>
@@ -25,6 +26,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
             android:layout_weight="5"
+            android:src="@drawable/bienvenida_forosvirtuales"
             android:id="@+id/imagen1_pantalla1_forosvirtuales" />
 
     </LinearLayout>
@@ -40,6 +42,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/comenzar_forosvirtuales"
+            android:src="@drawable/comenzar_forosvirtuales"
             android:onClick="onClick" />
     </LinearLayout>
 

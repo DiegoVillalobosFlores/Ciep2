@@ -29,8 +29,7 @@
                     android:textAppearance="@android:style/TextAppearance.Large"
                     android:id="@+id/texto1"
                     android:textSize="30sp"
-                    android:text="Felicidades"
-                    android:textColor="@color/Blue"
+                    android:text="Inténtalo de nuevo"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -103,6 +102,7 @@
                                         <ImageView
                                             android:layout_width="fill_parent"
                                             android:layout_height="fill_parent"
+                                            android:src="@drawable/estrellaplata"
                                             android:id="@+id/estrella1_pantalla28_datosnumericos" />
                                     </LinearLayout>
                                 </LinearLayout>
@@ -145,6 +145,7 @@
                                     <ImageView
                                         android:layout_width="fill_parent"
                                         android:layout_height="fill_parent"
+                                        android:src="@drawable/estrellaplata"
                                         android:id="@+id/estrella2_pantalla28_datosnumericos"
                                         android:layout_weight="1" />
                                 </LinearLayout>
@@ -159,6 +160,7 @@
                                     <ImageView
                                         android:layout_width="fill_parent"
                                         android:layout_height="fill_parent"
+                                        android:src="@drawable/estrellaplata"
                                         android:id="@+id/estrella3_pantalla28_datosnumericos"
                                         android:layout_weight="1" />
 
@@ -185,6 +187,7 @@
                                     <ImageView
                                         android:layout_width="fill_parent"
                                         android:layout_height="fill_parent"
+                                        android:src="@drawable/estrellaplata"
                                         android:id="@+id/estrella4_pantalla28_datosnumericos"
                                         android:layout_weight="1" />
                                 </LinearLayout>
@@ -214,6 +217,7 @@
                                         android:layout_width="fill_parent"
                                         android:layout_height="fill_parent"
                                         android:id="@+id/caraoestrellagrande"
+                                        android:src="@drawable/carita"
                                         android:layout_weight=".5" />
                                 </LinearLayout>
 
@@ -267,6 +271,7 @@
                                     <ImageView
                                         android:layout_width="fill_parent"
                                         android:layout_height="fill_parent"
+                                        android:src="@drawable/estrellaplata"
                                         android:id="@+id/estrella5_pantalla28_datosnumericos" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -304,6 +309,7 @@
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
+                    android:src="@drawable/globo"
                     android:id="@+id/imagen2_pantalla28_datosnumericos" />
 
             </LinearLayout>
@@ -340,6 +346,7 @@
                             android:layout_height="fill_parent"
                             android:id="@+id/comoRepresentar"
                             android:layout_weight="1"
+                            android:src="@drawable/recuadro"
                             android:onClick="onClick" />
 
                         <LinearLayout
@@ -394,7 +401,8 @@
                                 android:layout_height="fill_parent"
                                 android:id="@+id/menuPrincipal"
                                 android:layout_weight="2"
-                                android:onClick="onClick" />
+                                android:src="@drawable/menu"
+                                android:onClick="onFinish" />
 
                             <LinearLayout
                                 android:orientation="vertical"

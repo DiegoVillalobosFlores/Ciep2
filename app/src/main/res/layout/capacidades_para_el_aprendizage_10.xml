@@ -20,6 +20,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="3.5"
+                android:src="@drawable/texto_superior_capacidadesparaelaprendizaje"
                 android:id="@+id/imagen1_pantalla10_capacidadesparaelaprendizaje" />
 
             <ImageView
@@ -27,6 +28,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1.5"
                 android:adjustViewBounds="false"
+                android:src="@drawable/texto_pantalla10_capacidadesparaelaprendizaje"
                 android:id="@+id/fondo1_pantalla10_capacidadesparaelaprendizaje" />
 
             <LinearLayout
@@ -54,36 +56,42 @@
                         android:layout_height="fill_parent"
                         android:layout_weight="1"
                         android:adjustViewBounds="false"
+                        android:src="@drawable/rectangulo1_capacidadesparaelaprendizaje"
                         android:id="@+id/imagen2_pantalla10_capacidadesparaelaprendizaje" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1"
+                        android:src="@drawable/rectangulo2_capacidadesparaelaprendizaje"
                         android:id="@+id/imagen3_pantalla10_capacidadesparaelaprendizaje" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1"
+                        android:src="@drawable/rectangulo3_capacidadesparaelaprendizaje"
                         android:id="@+id/imagen4_pantalla10_capacidadesparaelaprendizaje" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1"
+                        android:src="@drawable/rectangulo4_capacidadesparaelaprendizaje"
                         android:id="@+id/imagen5_pantalla10_capacidadesparaelaprendizaje" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1"
+                        android:src="@drawable/rectangulo5_capacidadesparaelaprendizaje"
                         android:id="@+id/imagen6_pantalla10_capacidadesparaelaprendizaje" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1"
+                        android:src="@drawable/rectangulo6_capacidadesparaelaprendizaje"
                         android:id="@+id/imagen7_pantalla10_capacidadesparaelaprendizaje" />
 
                     <ImageView
@@ -127,6 +135,7 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="3"
                     android:weightSum="10"
+                    android:visibility="gone"
                     android:id="@+id/anterior_pantalla10_capacidadesparaelaprendizaje"
                     android:onClick="onClick" >
 
@@ -158,17 +167,18 @@
                     android:id="@+id/siguiente_pantalla10_capacidadesparaelaprendizaje"
                     android:onClick="onClick" >
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/next"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                        android:layout_marginRight="16dp"/>
                     <ImageView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="4"
-                        android:id="@+id/imagen10_pantalla10_capacidadesparaelaprendizaje" />
-
-                    <ImageView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="6"
-                        android:id="@+id/imagen11_pantalla10_capacidadesparaelaprendizaje" />
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/boton_siguiente_capacidadesparaelaprendizaje"
+                        android:layout_marginEnd="8dp"/>
                 </LinearLayout>
             </LinearLayout>
 

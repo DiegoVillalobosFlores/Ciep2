@@ -29,6 +29,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:id="@+id/imagen1_pantalla6_forosvirtuales"
+                        android:src="@drawable/texto_pantalla6_forosvirtuales"
                         android:adjustViewBounds="true" />
                 </LinearLayout>
             </ScrollView>
@@ -66,18 +67,20 @@
                     android:layout_weight="3"
                     android:weightSum="10"
                     android:id="@+id/anterior_pantalla6_forosvirtuales"
-                    android:onClick="onClick" >
+                    android:onClick="onClickBack" >
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="6"
+                        android:src="@drawable/boton_anterior_forosvirtuales"
                         android:id="@+id/imagen2_pantalla6_forosvirtuales" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="4"
+                        android:src="@drawable/texto_anterior_forosvirtuales"
                         android:id="@+id/imagen3_pantalla6_forosvirtuales" />
                 </LinearLayout>
 
@@ -100,12 +103,14 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="4"
+                        android:src="@drawable/texto_siguiente_forosvirtuales"
                         android:id="@+id/imagen4_pantalla6_forosvirtuales" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="6"
+                        android:src="@drawable/boton_siguiente_forosvirtuales"
                         android:id="@+id/imagen5_pantalla6_forosvirtuales" />
                 </LinearLayout>
             </LinearLayout>

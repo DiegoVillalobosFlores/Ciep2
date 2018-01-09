@@ -21,6 +21,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight=".6"
                 android:adjustViewBounds="false"
+                android:src="@drawable/texto_pantalla13_forosvirtuales"
                 android:id="@+id/fondo1_pantalla13_forosvirtuales" />
 
             <LinearLayout
@@ -57,18 +58,20 @@
                     android:layout_weight="3"
                     android:weightSum="10"
                     android:id="@+id/anterior_pantalla13_forosvirtuales"
-                    android:onClick="onClick" >
+                    android:onClick="onClickBack" >
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="6"
+                        android:src="@drawable/boton_anterior_forosvirtuales"
                         android:id="@+id/imagen1_pantalla13_forosvirtuales" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="4"
+                        android:src="@drawable/texto_anterior_forosvirtuales"
                         android:id="@+id/imagen2_pantalla13_forosvirtuales" />
                 </LinearLayout>
 
@@ -91,12 +94,14 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="4"
+                        android:src="@drawable/texto_siguiente_forosvirtuales"
                         android:id="@+id/imagen3_pantalla13_forosvirtuales" />
 
                     <ImageView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="6"
+                        android:src="@drawable/boton_siguiente_forosvirtuales"
                         android:id="@+id/imagen4_pantalla13_forosvirtuales" />
                 </LinearLayout>
             </LinearLayout>

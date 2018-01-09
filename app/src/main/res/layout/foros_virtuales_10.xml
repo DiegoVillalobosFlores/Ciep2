@@ -17,11 +17,13 @@
             android:layout_height="fill_parent"
             android:layout_weight="4"
             android:baselineAlignBottom="false"
+            android:src="@drawable/texto_pantalla10_forosvirtuales"
             android:id="@+id/fondo1_pantalla10_forosvirtuales" />
 
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:src="@drawable/ilustracion_pantalla10_forosvirtuales"
             android:id="@+id/imagen1_pantalla10_forosvirtuales"
             android:layout_weight="6" />
     </LinearLayout>
@@ -53,18 +55,20 @@
                 android:layout_weight="3"
                 android:weightSum="10"
                 android:id="@+id/anterior_pantalla10_forosvirtuales"
-                android:onClick="onClick">
+                android:onClick="onClickBack">
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="6"
+                    android:src="@drawable/boton_anterior_forosvirtuales"
                     android:id="@+id/imagen2_pantalla10_forosvirtuales" />
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="4"
+                    android:src="@drawable/texto_anterior_forosvirtuales"
                     android:id="@+id/imagen3_pantalla10_forosvirtuales" />
             </LinearLayout>
 
@@ -87,12 +91,14 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="4"
+                    android:src="@drawable/texto_siguiente_forosvirtuales"
                     android:id="@+id/imagen4_pantalla10_forosvirtuales" />
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="6"
+                    android:src="@drawable/boton_siguiente_forosvirtuales"
                     android:id="@+id/imagen5_pantalla10_forosvirtuales" />
             </LinearLayout>
         </LinearLayout>

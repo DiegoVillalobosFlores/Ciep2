@@ -6,6 +6,10 @@
 
     <color name="White">#fff</color>
     <color name="Red">#FC4B54</color>
+    <color name="Red40">#66FC4B54</color>
     <color name="Blue">#0097A7</color>
     <color name="Green">#6EC274</color>
+    <color name="Green60">#996EC274</color>
+    <color name="Yellow">#FFED76</color>
+    <color name="Yellow60">#A3FFED76</color>
 </resources>
